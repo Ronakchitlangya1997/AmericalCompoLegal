@@ -1,0 +1,53 @@
+.Section3{
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 92px;
+    margin-right: 92px;
+}
+
+.Section3_1_heading1{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FF5601;
+}
+
+.Section3_1_heading2{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 48px;
+    color: #131543;
+}
+
+.Section3_2{
+    margin-top: 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.Section3_2_card{
+    width: 395px;
+    border: 1px solid #EFEFEF;
+    margin-top: 30px;
+}
+
+.Section3_2_info{
+    padding: 27px 35px 26px 35px;
+}
+
+.Section3_2_heading1{
+    margin: 0;
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #131543;
+}

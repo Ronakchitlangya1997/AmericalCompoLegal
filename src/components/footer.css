@@ -1,0 +1,87 @@
+.Section5{
+    height: 450px;
+    background: #001B37;
+    padding: 96px 30px 20px 150px;
+    gap: 150px;
+}
+
+.Section5_1{
+    width: 447px;
+}
+.Section5_1_heading1{
+    font-family: 'Sombra';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.Section5_1_heading2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'liga' off;
+    color: #D9DBE1;
+    text-align: left;
+}
+
+.Section5_2_heading1, .Section5_3_heading1{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0!important;
+    margin: 0;
+  }
+  li{
+    text-align: left;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+    text-align: left;
+    padding: 0;
+    font-weight: 800;
+    font-size: 16px;
+  }
+  ul li a:hover {
+    color: #2a8ded;
+    padding: 0;
+  }
+
+  .Section5_3_heading1_reachus{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+    color: #D9DBE1;
+    margin-bottom: 0px;
+  }
+
+  a{
+    font-family: 'Liberation Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #D9DBE1;
+  }

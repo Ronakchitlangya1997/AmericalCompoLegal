@@ -1,0 +1,129 @@
+.Section4{
+    background: url(https://americancompo.s3.ap-south-1.amazonaws.com/Request+free+revewi.png) no-repeat center center;
+    background-size: cover;
+    height: 850px;
+    justify-content: space-around;
+    margin-top: 100px;
+    mix-blend-mode: multiply;
+    /* opacity: 0.5; */
+    color: #FFFFFF
+}
+
+.Section4_1{
+    width: 600px;    
+    margin-top: 70px;
+}
+
+.Section4_1_heading1{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 30px;
+    padding-right: 130px;
+    margin-bottom: 0.5rem;
+}
+
+.Section4_1_heading2{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.Section4_1_heading3{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.Section4_1_heading4{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 64px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 85px;
+    margin-bottom: 0.5rem;
+}
+
+.Section4_1_heading5{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.Section4_2{
+    width: 551px;
+    height: 710px;
+    background-color: #FFFFFF;
+    padding: 42px 28px 36px 28px;
+}
+
+.Section4_2_heding1{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    color: #0F2B61;
+    text-align: left;
+    padding-right: 135px;
+}
+
+.Section4_2_input{
+    width: 240px;
+    height: 80px;
+    background: #FFFFFF;
+    border: 1px solid #C5CEDF;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.Section4_2_inputbox{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.messbox{
+    width: 495px;
+    height: 214px;
+    padding-top: 24px;
+}
+
+.Section4_2_form_button{
+    width: 495px;
+    height: 80px;
+    background: #FF5601;
+    border-radius: 5px;
+    border: 0px;
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

@@ -20,7 +20,7 @@ export function Contact() {
             message:message
           };
         console.log(user)
-        const {data} = await axios.post('http://13.233.131.230/leadsamerican-compo-legel/', user ,{headers: {
+        const {data} = await axios.post('http://65.0.139.82//leadsamerican-compo-legel/', user ,{headers: {
             'Content-Type': 'application/json'
         }});
     }

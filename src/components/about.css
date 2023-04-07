@@ -1,10 +1,11 @@
 .Section2{
     margin-top: 100px;
-    justify-content: space-around;
+    margin-left: 92px;
+    margin-right: 92px;
 }
 
 .section2_1{
-    width: 350px;
+   flex: 1;
     margin-top: 90px;
 }
 
@@ -42,8 +43,9 @@
 }
 
 .section2_2{
-    width: 800px;
     flex-wrap: wrap;
+    margin-left: 15px;
+    flex: 3;
 }
 
 .section2_2_1{
@@ -100,4 +102,17 @@
     letter-spacing: 1.3px;
     text-transform: uppercase;
     color: #012346;
+}
+
+/* @media screen and (max-width: 885px){
+    .Section2{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+} */
+
+@media screen and (max-width: 700px){
+    .Section2{
+        flex-direction: column;
+    }
 }

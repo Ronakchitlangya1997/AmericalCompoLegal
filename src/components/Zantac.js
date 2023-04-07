@@ -20,35 +20,36 @@ export function Zantac() {
 
                         <p className="Section6_heading2">People who got diagnosed with cancer by the use of Zantac medication can file for the Zantac lawsuit.</p>
                     </div>
-                    <div className="Section6_3">
+                </div>
+            </div>
+            <div className="Section4 d-flex">
+                <div className="Section6_3">
                         <h3 className="Section6_heading1_1">What is Zantac?</h3>
                         <p className="Section6_heading2_1">Ranitidine is the other name of Zantac medication which is an anti-acid drug.</p>
 
                         <p className="Section6_heading2_1">It is used to prevent and treat stomach acid, heartburn, and other diseases that are available over the counter.</p>
 
                         <p className="Section6_heading2_1">Also used to treat intestinal and stomach ulcers gastroesophageal reflux disease (GERD), erosive esophagitis,
-stomach excess acid such as Zollinger-Ellison syndrome.</p>
-
+                           stomach excess acid such as Zollinger-Ellison syndrome.</p>
                         <p className="Section6_heading2_1">People who are filing for Zantac and Ranitidine lawsuits claiming these drugs contain unaccepted levels of the probable carcinogen NDMA, the big reason for developing cancer.</p>
-                    </div>
                 </div>
-
-                <div className="Section6_2_form_box">
-                    <p className="Section6_2_heding1">Contact Us</p>
+                <div className="Section4_2">
+                    <p className="Section4_2_heding1">Make Your Voice Heard</p>
                     <form className="Auth-form">
-                        <div className='Section6_2_inputbox d-flex'>
+                        <div className='Section4_2_inputbox d-flex'>
                             <input className="Section4_2_input" type="text" id="fname" name="fname" placeholder='First Name'/>
                             <input className="Section4_2_input" type="text" id="lname" name="lname" placeholder='Last Name'/>
                             <input className="Section4_2_input" type="text" id="email" name="email" placeholder='Email'/>
                             <input className="Section4_2_input" type="text" id="phone" name="phone" placeholder='Phone'/>
                             <textarea className="Section4_2_input messbox" type="text" id="message" name="message" placeholder='Type Your Message Here'/>
                         </div>
-                        <button className="Section6_2_form_button" type="submit">
+                        <button className="Section4_2_form_button" type="submit">
                             Submit
                         </button>
                     </form>
-            </div>
-
+                </div>
             </div>
         </div>
+
+        
     )}

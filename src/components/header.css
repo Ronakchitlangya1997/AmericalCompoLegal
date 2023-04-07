@@ -15,12 +15,12 @@
 
 .navbar_title{
     background: #0F2B61;
-    width: 24%;
-    padding: 1.5% 4% 1% 2%;
+    width: 310px;
     text-align: left;
     display: flex;
     flex-direction: row;
     gap: 5%;
+    padding: 14px 18px;
 }
 
 
@@ -49,9 +49,11 @@
 .navbar_title_last{
     width: 210px;
     background: #FF5601;
-    height: inherit;
-    padding: 35px 51px 34px 52px;
+    height: 100px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar_title_last_font{
@@ -72,6 +74,8 @@
     height: 600px;
     justify-content: space-around;
 }
+
+meda
 
 .dropbtn{
     gap: 78px;
@@ -154,7 +158,7 @@
 }
 
 .Section1_form_input{
-    width: 390px;
+    width: 100%;
     height: 80px;
     background: #FFFFFF;
     border: 1px solid #C5CEDF;
@@ -174,7 +178,7 @@
 
 .Section1_form_button{
     margin-top: 20px;
-    width: 390px;
+    width: 100%;
     height: 80px;
     background: #FF5601;
     border-radius: 5px;
@@ -237,10 +241,11 @@
 
 .Section6_3{
     margin-top: 50px;
-    background-color: rgba(23,44,77,.8);
-    height: 500px;
+    height: auto;
     padding-left: 50px;
     padding-top: 50px;
+    padding-bottom: 50px;
+    width: 600px;
 }
 
 .Section6_heading1_1{
@@ -305,4 +310,234 @@
     line-height: 50px;
     color: #fff;
     text-align: center;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .sizeOfNavbar{
+        width: 79% !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Section1_info{
+        width: 470px !important;
+    }
+
+    .Section1_Heading1{
+        font-size: 25px !important;
+    }
+    .Section1_Heading2{
+        font-size: 64px !important;
+    }
+    .Section1_Heading3{
+        font-size: 19px !important;
+    }
+
+    .Section1_Heading4{
+        font-size: 27px !important;
+    }
+
+    .Section1_form{
+        width: 450px !important;
+    }
+
+    .Section1_form_heading1{
+        font-size: 20px !important;
+    }
+
+    .Section1_form_heading2{
+        font-size: 45px !important;
+    }
+
+    .Section1_form_input{
+      font-size: 17px !important;
+    }
+
+    .Section1_form_heading3{
+        font-size: 16px !important;
+    }
+
+    
+}
+
+@media screen and ((max-width: 1536px) and (min-width :1280px )) {
+    .sizeOfNavbar{
+        width: 73% !important;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .Section1{
+        background: url(https://americancompo.s3.ap-south-1.amazonaws.com/Hero+Banner.png) no-repeat center center;
+        background-size: cover;
+        justify-content: space-around;
+        flex-direction: column !important;
+        align-items: center !important;
+        height: auto !important;
+    }
+
+    .Section1_Heading1{
+        text-align: center !important;
+    }
+    .Section1_Heading2{
+        text-align: center !important;
+    }
+    .Section1_Heading3{
+        text-align: center !important;
+    }
+    .Section1_Heading4{
+        text-align: center !important;
+    }
+
+    .Section1_form{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Section2{
+        margin-left: 65px !important;
+       margin-right: 65px !important ;
+    }
+
+
+    .Section1_info{
+        width: auto !important;
+    }
+
+    .Section6_3{
+        width:auto !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .Section6_heading1_1{
+        text-align: center !important;
+        width: auto !important;
+    }
+
+    .Section6_heading2_1{
+        text-align: center !important;
+        width: auto !important;
+    }
+}
+
+ @media screen and (max-width: 500px) {
+    .Section1{
+        background: url(https://americancompo.s3.ap-south-1.amazonaws.com/Hero+Banner.png) no-repeat center center;
+        background-size: cover;
+        justify-content: space-around;
+        flex-direction: column !important;
+        align-items: center !important;
+        height: auto !important;
+    }
+    
+    .Section2{
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    }
+    .Section1_info{
+        margin-top: 7%;
+    }
+
+    .Section1_form{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Section1_Heading1{
+        text-align: center !important;
+    }
+    .Section1_Heading2{
+        text-align: center !important;
+    }
+    .Section1_Heading3{
+        text-align: center !important;
+    }
+    .Section1_Heading4{
+        text-align: center !important;
+    }
+
+    #logText{
+        display: none;
+    }
+
+    .navbar_title_last{
+        width: 76px !important;
+    }
+
+    .Section1_Heading1{
+        font-size: 15px !important;
+    }
+
+    .Section1_Heading2{
+        font-size: 35px !important;
+    }
+
+    .Section1_Heading3{
+        font-size: 18px !important;
+    }
+
+    .Section1_Heading4{
+        font-size: 20px !important;
+    }
+
+    .Section1_form{
+        width: 87% !important;
+        height: auto !important;
+    }
+
+    .Section1_form_button{
+        width:100% !important;  
+    }
+
+    .Section1_form_input{
+        width: 100% !important;
+    }
+
+    .section2_2{
+        margin-left: 0px !important;
+    }    
+
+    .navbar_title_last_font{
+        font-size: 15px !important;
+    }
+
+    .Section1_form_heading1{
+        font-size: 15px !important;
+    }
+
+    .Section1_form_heading2{
+        font-size: 40px !important;
+    }
+
+
+    .fontSizeForButton{
+        font-size: 13px !important;
+    }
+}
+
+.sizeOfNavbar{
+    width: 60%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 700px){
+    .navbar_title_font{
+        display: none !important;
+    }
+
+    .navbar_title{
+        width: auto !important;
+    }
+
+    .navbar_title_last{
+        width: auto !important;
+        padding: 15px !important;
+    }
+}
+ 
+
+.fontSizeForButton{
+    font-size: 16px;
 }

@@ -1,87 +1,257 @@
-.Section5{
-    height: 450px;
-    background: #001B37;
-    padding: 96px 30px 20px 150px;
-    gap: 150px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-.Section5_1{
-    width: 447px;
-}
-.Section5_1_heading1{
-    font-family: 'Sombra';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 34px;
-    color: #FFFFFF;
+.footer_lower {
+    width: 100%;
+    /* height: 3rem; */
+    background-color: white;
+    color: black;
+    font-size: 0.7rem;
     text-align: left;
+    font-family: 'Rubik', sans-serif;
+    padding-left: 0.8rem;
+    padding-right: 1.3rem;
 }
 
-.Section5_1_heading2{
+.footer_lower p {
+    margin-bottom: 0rem;
+}
+
+.footer_lower span{
+    font-weight: 700;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.footer_upper_bottom {
+    width: 100%;
+    /* height: 4rem; */
+    margin:auto;
+    text-align: right;
     font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
-    font-feature-settings: 'liga' off;
-    color: #D9DBE1;
-    text-align: left;
-}
-
-.Section5_2_heading1, .Section5_3_heading1{
-    font-family: 'Liberation Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 30px;
-    font-feature-settings: 'liga' off;
-    color: #FFFFFF;
-    text-align: left;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0!important;
-    margin: 0;
-  }
-  li{
-    text-align: left;
-  }
-  li:not(:first-child) {
-    margin-top: 0.8em;
-  }
-  ul li a {
-    color: #a7a7a7;
-    text-decoration: none;
-    text-align: left;
-    padding: 0;
-    font-weight: 800;
-    font-size: 16px;
-  }
-  ul li a:hover {
-    color: #2a8ded;
-    padding: 0;
-  }
-
-  .Section5_3_heading1_reachus{
-    font-family: 'Liberation Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    font-feature-settings: 'liga' off;
-    color: #D9DBE1;
-    margin-bottom: 0px;
-  }
+    color: white;
+    padding: 1vw;
+    /* border:1px solid white; */
 
-  a{
-    font-family: 'Liberation Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-color: #D9DBE1;
-  }
+    background-color: #001213;
+}
+
+.footer_upper_bottom p {
+    margin:auto;
+    text-align: right;
+    /* position: relative;
+    right: 9rem; */
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.reach-us {
+    /* border:1px solid white; */
+    /* position: relative; */
+    text-align: left;
+    width: 24vw;
+}
+
+.reach-us h4 {
+    margin-bottom: 1.2rem;
+}
+
+
+.reach-us i {
+    margin-right: 0.88rem;
+    font-size: 123%;
+    color:#56B6DC;
+}
+
+.reach-us p {
+    font-size: 0.8rem;
+    color: #D9DBE1;
+
+    font-weight: 300;
+}
+
+.reach-us p svg{
+    font-size: 0.8rem;
+    color: #FF5601;
+    font-weight: 300;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.quick-links {
+    /* position: relative; */
+    text-align: left;
+    width: 22vw;
+    /* border:1px solid white; */
+}
+
+.quick-links_container {
+    display: flex;
+    
+    
+    /* gap: 4rem; */
+}
+
+.quick-links_container a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #D9DBE1;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.quick-links_container-1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6vw;
+    /* border:1px solid white; */
+    
+}
+
+.quick-links_container-2 {
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid white; */
+}
+
+.quick-links_container-1 span{
+    background-color: #D9DBE1;
+    color:black;
+    padding:0.4rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    position: relative;
+    top: 0.8rem;
+    font-weight: 700;
+    border-radius: 0.2rem;
+    
+}
+
+.quick-links_container-1 span:hover{
+    /* scale:1.1; */
+    background-color: white;
+    color:black;
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+.follow-us {
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #D9DBE1;
+    font-weight: 300;
+    width: 26vw;
+    /* border:1px solid white; */
+}
+
+.follow-us p {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+
+.follow-us_links {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.follow-us_links i {
+    color: white;
+    font-size: 119%;
+}
+
+
+.follow-us_links i:hover{
+    scale: 1.2;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+.footer_upper_top {
+    /* border:1px solid white; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* padding-top: 4.5rem ;
+    padding-bottom: 4.5rem ; */
+    padding:4.5vw;
+    /* gap: 14vw; */
+    /* border:1px solid white; */
+}
+
+.footer_upper_top h4 {
+    font-weight: 600;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.footer_upper {
+  background: #001b37;
+}
+
+
+
+/* @media screen and (max-width: 1068px){
+    .reach-us{
+        position: relative;
+        right:2rem;
+    }
+    .footer_upper_bottom p{
+        text-align: center;
+    }
+} */
+
+@media screen and (max-width: 800px) {
+
+    .footer_upper_top {
+        flex-direction: column;
+        align-items: center;
+        /* justify-content:space-between; */
+        /* padding: 5vw; */
+        padding-top: 9vw;
+    }
+
+    
+
+    .follow-us {
+        width: 78vw;
+        /* text-align: center; */
+        margin-bottom: 6vw;
+    }
+    .follow-us_links{
+        margin-top: 2vw;
+    }
+
+    .reach-us {
+        width: 78vw;
+    }
+
+    .quick-links {
+        width: 78vw;
+        margin-bottom: 6vw;
+    }
+    .quick-links_container-1{
+        margin-right: 20vw;
+    }
+
+    .footer_upper_bottom p {
+        text-align: center;
+        position: static;
+        
+    }
+}

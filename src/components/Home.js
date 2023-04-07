@@ -6,6 +6,8 @@ import './contact.css'
 import {About} from './about';
 import {Expertise} from './expertise';
 import {Contact} from './contact';
+
+ 
 export function Home() {
 
 
@@ -13,10 +15,10 @@ export function Home() {
         <div>
         <div className="Section1 d-flex">
             <div className="Section1_info">
-                <p className="Section1_Heading1">Have you ever suffered from an injury?</p>
-                <p className="Section1_Heading2">You Deserve To Be Compensated</p>
-                <p className="Section1_Heading3">No Cost, No Obligation</p>
-                <p className="Section1_Heading4">Call (915) 444-6999 to get a free consultation.</p>
+                <p className="Section1_Heading1"  >Have you ever suffered from an injury?</p>
+                <p className="Section1_Heading2"  >You Deserve To Be Compensated</p>
+                <p className="Section1_Heading3"  >No Cost, No Obligation</p>
+                <p className="Section1_Heading4"  >Call (915) 444-6999 to get a free consultation.</p>
             </div>
             <div className="Section1_form">
                 <p className='Section1_form_heading1'>Suffered from an injury?</p>
@@ -30,7 +32,7 @@ export function Home() {
                     <option value="hairrelaxer">Hair Relaxer</option>
                     <option value="talcum">Talcum</option>
                 </select>
-                <button className='Section1_form_button' onClick={(e) => {
+                <button className='Section1_form_button fontSizeForButton' onClick={(e) => {
       e.preventDefault();
       console.log(document.getElementById("cars").value)
          window.location.href='/'+document.getElementById("cars").value;

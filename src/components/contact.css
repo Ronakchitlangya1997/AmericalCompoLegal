@@ -6,7 +6,8 @@
     margin-top: 100px;
     mix-blend-mode: multiply;
     /* opacity: 0.5; */
-    color: #FFFFFF
+    color: #FFFFFF;
+    padding-right: 15px;
 }
 
 .Section4_1{
@@ -113,7 +114,7 @@
 }
 
 .Section4_2_form_button{
-    width: 495px;
+    width: 100%;
     height: 80px;
     background: #FF5601;
     border-radius: 5px;
@@ -126,4 +127,119 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 500px){
+    .Section4{
+        height: auto !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .Section4_1{  
+        width: auto !important; 
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .Section4_2{
+        height: auto !important;
+    }
+
+    .Section4_2{
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      width: 85% !important;
+    }
+
+    .Section4_2_heding1{
+        font-size: 35px !important;
+        padding-right: 0px !important;
+    }
+
+}
+
+@media screen and ((max-width: 1100px) and (min-width:501px)){
+    .Section4_2{
+        width: 476px !important;
+    }
+    .Section4_2_heding1 {
+        font-size: 45px !important;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .Section4_1{
+        width: 455px !important;
+    }
+    .Section4_1_heading1{
+        font-size: 51px !important;
+    }
+
+    .Section4_1_heading2{
+        font-size: 20px !important;
+    }
+
+    .Section4_1_heading3{
+        font-size: 20px !important;
+    }
+    .Section4_1_heading4{
+        margin-top: 53px !important; 
+        font-size: 29px !important;
+    }
+
+    .Section4_1_heading5{
+        font-size: 15px !important;
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width: 980px){
+    .Section4{
+        height: auto !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding-right: 0px !important;
+    }
+
+    .Section4_2{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .Section4_1{
+        width: auto !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .Section4_1_heading1{
+        text-align: center !important;
+        padding-right: 0px !important;
+    }
+    .Section4_1_heading2{
+        text-align: center !important;
+    }
+    .Section4_1_heading3{
+        text-align: center !important;
+    }
+    .Section4_1_heading4{
+        text-align: center !important;
+    }
+
+    .Section4_1_heading5{
+        text-align: center !important;
+    }
+
+    
+    .Section4_2{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+      }
+
+
 }

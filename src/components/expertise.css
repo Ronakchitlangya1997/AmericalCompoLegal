@@ -5,6 +5,14 @@
     margin-right: 92px;
 }
 
+
+@media screen and (max-width: 980px){
+    .Section3{
+        margin-left: 65px !important;
+        margin-right: 65px !important;
+    }
+}
+
 .Section3_1_heading1{
     font-family: 'Liberation Sans';
     font-style: normal;
@@ -27,9 +35,9 @@
 
 .Section3_2{
     margin-top: 60px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 401px);
+    gap: 38px;
 }
 
 .Section3_2_card{
@@ -50,4 +58,31 @@
     font-size: 24px;
     line-height: 34px;
     color: #131543;
+}
+
+/* @media screen and (max-width: 885px){
+    .Section3_2_card{
+        width: 100% !important;
+    }
+} */
+
+@media screen and (max-width: 500px){
+    .Section3_2_card{
+        width: calc(100vw - 20px) !important;
+    }
+
+    .Section3{
+        margin-top: 26px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .imageSize{
+        width:100% !important;
+    }
+}
+
+
+.imageSize{
+    max-width: 100%;
+    max-height: 100%;
 }

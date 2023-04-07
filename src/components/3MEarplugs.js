@@ -20,7 +20,12 @@ export function Earplugs() {
 
                         <p className="Section6_heading2">The Guardian Legal Network can help you find a qualified legal professional who can help you take legal action and guide you through the legal process.</p>
                     </div>
-                    <div className="Section6_3">
+                   
+                </div>
+             </div>   
+
+            <div className="Section4 d-flex">
+                <div className="Section6_3">
                         <h3 className="Section6_heading1_1">What is Paraquat?</h3>
                         <p className="Section6_heading2_1">Paraquat is a toxic herbicide widely-used for weed and grass control. It is available in liquid form in several different strengths in the United States. The product is classified as a “restricted use pesticide” by the FDA. This means that it can only be used by a licensed applicator. Because Paraquat is highly poisonous, it has a blue dye that keeps consumers from confusing the herbicide with other beverages. It also has a secondary chemical agent that will induce vomiting if someone drinks it by accident, along with a sharp odor to serve as a warning. These safeguards are not included outside of the United States.</p>
 
@@ -28,26 +33,23 @@ export function Earplugs() {
 
                         <p className="Section6_heading2_1">When Paraquat enters the body, it is distributed evenly throughout a person’s system. The liver, lungs, kidneys, and other body parts can undergo toxic chemical reactions.</p>
 
-                        <p className="Section6_heading2_1">Switzerland-based Syngenta ironically produced the product even though the country banned the use of the Paraquat in 1989. Thirty-two countries have banned Paraquat, but the United States has not.</p>
-                    </div>
+                        <p className="Section6_heading2_1"> Despite Switzerland banning the use of Paraquat in 1989, Syngenta, based in Switzerland, produced the product.</p>
                 </div>
-
-                <div className="Section6_2_form_box">
-                    <p className="Section6_2_heding1">Contact Us</p>
+                <div className="Section4_2">
+                    <p className="Section4_2_heding1">Make Your Voice Heard</p>
                     <form className="Auth-form">
-                        <div className='Section6_2_inputbox d-flex'>
+                        <div className='Section4_2_inputbox d-flex'>
                             <input className="Section4_2_input" type="text" id="fname" name="fname" placeholder='First Name'/>
                             <input className="Section4_2_input" type="text" id="lname" name="lname" placeholder='Last Name'/>
                             <input className="Section4_2_input" type="text" id="email" name="email" placeholder='Email'/>
                             <input className="Section4_2_input" type="text" id="phone" name="phone" placeholder='Phone'/>
                             <textarea className="Section4_2_input messbox" type="text" id="message" name="message" placeholder='Type Your Message Here'/>
                         </div>
-                        <button className="Section6_2_form_button" type="submit">
+                        <button className="Section4_2_form_button" type="submit">
                             Submit
                         </button>
                     </form>
-            </div>
-
+                </div>
             </div>
         </div>
     )}

@@ -13,7 +13,8 @@ export function Header() {
       };
 
     const navbar_subtitle={
-        marginLeft: "10%"
+        justifyContent: "center",
+        margin: "0px 10px"
     }
 
     const navbar_subtitle_fonts = {
@@ -28,19 +29,22 @@ export function Header() {
         border: '0'
     }
 
-
+  const imgSize = {
+    width: "auto",
+    height: "75px"
+  }
 
     return (
         <Navbar style={navbar} expand="lg">
             <div className="navbar_title">
-              <img src="https://americancompo.s3.ap-south-1.amazonaws.com/logo_final_final.png" width="70"></img>
-              <h5 className="navbar_title_font">American Compo Legal</h5>
+              <img src="https://americancompo.s3.ap-south-1.amazonaws.com/logo_final_final.png" width="70" style={imgSize}></img>
+              <h5 className="navbar_title_font" id='logText'>American Compo Legal</h5>
             </div>
                 {/* <Navbar.Brand style={navbar_title}><h5>American Compo Legal</h5></Navbar.Brand> */}
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" style={navbar_subtitle}>
-              <Nav className="me-auto dropbtn">
+              <Nav className="dropbtn sizeOfNavbar">
                 <Nav.Link style={navbar_subtitle_fonts} href="/">Home</Nav.Link>
                 <Nav.Link style={navbar_subtitle_fonts} href="#link">About Us</Nav.Link>
                 <Dropdown className='dropdownbtn'>

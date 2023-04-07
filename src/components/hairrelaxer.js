@@ -20,7 +20,12 @@ export function Hairrelaxer() {
 
                         <p className="Section6_heading2">Contact a lawyer today to explore your legal options and file a hair relaxer lawsuit.</p>
                     </div>
-                    <div className="Section6_3">
+                    
+                </div>
+             </div>   
+
+                <div className="Section4 d-flex">
+                <div className="Section6_3">
                         <h3 className="Section6_heading1_1">What is Hair Relaxer?</h3>
                         <p className="Section6_heading2_1">Have you experienced adverse effects after using a hair relaxer product? You may be eligible to file a hair relaxer lawsuit.</p>
 
@@ -30,24 +35,21 @@ export function Hairrelaxer() {
 
                         <p className="Section6_heading2_1">You may be entitled to compensation for your damages and expenses related to your hair relaxer injury.</p>
                     </div>
-                </div>
-
-                <div className="Section6_2_form_box">
-                    <p className="Section6_2_heding1">Contact Us</p>
+                <div className="Section4_2">
+                    <p className="Section4_2_heding1">Make Your Voice Heard</p>
                     <form className="Auth-form">
-                        <div className='Section6_2_inputbox d-flex'>
+                        <div className='Section4_2_inputbox d-flex'>
                             <input className="Section4_2_input" type="text" id="fname" name="fname" placeholder='First Name'/>
                             <input className="Section4_2_input" type="text" id="lname" name="lname" placeholder='Last Name'/>
                             <input className="Section4_2_input" type="text" id="email" name="email" placeholder='Email'/>
                             <input className="Section4_2_input" type="text" id="phone" name="phone" placeholder='Phone'/>
                             <textarea className="Section4_2_input messbox" type="text" id="message" name="message" placeholder='Type Your Message Here'/>
                         </div>
-                        <button className="Section6_2_form_button" type="submit">
+                        <button className="Section4_2_form_button" type="submit">
                             Submit
                         </button>
                     </form>
-            </div>
-
+                </div>
             </div>
         </div>
     )}

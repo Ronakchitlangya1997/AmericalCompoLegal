@@ -6,10 +6,26 @@ import './contact.css'
 import {About} from './about';
 import {Expertise} from './expertise';
 import {Contact} from './contact';
+import { useEffect, useState } from 'react';
+import axios from "axios";
 
  
 export function Home() {
+    const [caseData, setCaseData] = useState(null)
 
+    useEffect(()=>{
+        const getapidata = async () => {
+          try{
+            const datafetch = await axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/cases/`);
+            setCaseData(datafetch.data.caseList);
+          }catch(error){  
+            console.log(error);
+          }
+        };
+  
+        getapidata();
+        
+      },[]);
 
     return (
         <div>
@@ -23,7 +39,7 @@ export function Home() {
             <div className="Section1_form">
                 <p className='Section1_form_heading1'>Suffered from an injury?</p>
                 <p className='Section1_form_heading2'>Make Your Voice Heard</p>
-                <select className='Section1_form_input' name="cars" id="cars">
+                {/* <select className='Section1_form_input' name="cars" id="cars">
                     <option value="None" selected="true" disabled>Select a Case Type</option>
                     <option value="zantac">Zantac</option>
                     <option value="paraquat">Paraquat</option>
@@ -31,7 +47,15 @@ export function Home() {
                     <option value="camplejeune">Camp Lejeune</option>
                     <option value="hairrelaxer">Hair Relaxer</option>
                     <option value="talcum">Talcum</option>
-                </select>
+                </select> */}
+                {/* dynamic code for the above */}
+                {caseData &&
+                <select className='Section1_form_input' name="cars" id="cars">
+                    <option value="None" selected="true" disabled>Select a Case Type</option>
+                    {caseData.map((item, index) => (
+                        <option key={index} value={item}>{item}</option>
+                    ))}
+                </select>}
                 <button className='Section1_form_button fontSizeForButton' onClick={(e) => {
       e.preventDefault();
       console.log(document.getElementById("cars").value)

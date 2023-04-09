@@ -12,7 +12,7 @@ const margin = {
 export function Footer() {
 
     return (
-        <div className="footer">
+        <div className="footer" id="footerId">
         <div className="footer_upper">
             <div className="footer_upper_top">
                 <div className="follow-us">

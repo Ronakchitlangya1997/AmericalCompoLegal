@@ -5,6 +5,26 @@
     margin-right: 92px;
 }
 
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+.pagination p{
+    margin: 1rem;
+}
+
+.pagination button{
+    padding: 0rem 1rem 0rem 1rem;
+    border: none;
+    background-color: #FF5601;
+    color: white;
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 980px){
     .Section3{
@@ -14,7 +34,7 @@
 }
 
 .Section3_1_heading1{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -25,7 +45,7 @@
 }
 
 .Section3_1_heading2{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
@@ -35,13 +55,14 @@
 
 .Section3_2{
     margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 401px);
-    gap: 38px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
 }
 
 .Section3_2_card{
-    width: 395px;
+    font-family: liberation-sans;
+    width: 30vw;
     border: 1px solid #EFEFEF;
     margin-top: 30px;
 }
@@ -52,7 +73,7 @@
 
 .Section3_2_heading1{
     margin: 0;
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -65,6 +86,12 @@
         width: 100% !important;
     }
 } */
+
+@media  screen and (max-width: 580px){
+    .Section3_2{
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 500px){
     .Section3_2_card{

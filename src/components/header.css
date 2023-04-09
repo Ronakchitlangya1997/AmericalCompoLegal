@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'liberation-sans';
+    src: url('./LiberationSans.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('./OpenSans.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .navbar{
     height : "90px";
     background: #FFFFFF;
@@ -54,6 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar_title_last_font{
@@ -83,7 +98,7 @@ meda
 
 
 .Section1_Heading1{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -98,7 +113,7 @@ meda
 }
 
 .Section1_Heading2{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 70px;
@@ -108,7 +123,7 @@ meda
 }
 
 .Section1_Heading3{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -118,7 +133,7 @@ meda
 }
 
 .Section1_Heading4{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -136,7 +151,7 @@ meda
 }
 
 .Section1_form_heading1{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -147,7 +162,7 @@ meda
 }
 
 .Section1_form_heading2{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
@@ -188,7 +203,7 @@ meda
 }
 
 .Section1_form_heading3{    
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

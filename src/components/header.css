@@ -29,12 +29,9 @@
 
 .navbar_title{
     background: #0F2B61;
-    width: 310px;
     text-align: left;
     display: flex;
     flex-direction: row;
-    gap: 5%;
-    padding: 14px 18px;
 }
 
 

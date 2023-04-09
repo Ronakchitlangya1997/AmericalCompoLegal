@@ -31,8 +31,7 @@ export function Header() {
     }
 
   const imgSize = {
-    width: "auto",
-    height: "75px"
+    width: "10vw",
   }
 
   const navbar_button = {
@@ -70,8 +69,8 @@ export function Header() {
     return (
         <Navbar style={navbar} expand="lg">
             <div className="navbar_title">
-              <img src="https://americancompo.s3.ap-south-1.amazonaws.com/logo_final_final.png" width="70" style={imgSize}></img>
-              <h5 className="navbar_title_font" id='logText'>American Compo Legal</h5>
+              <img src="https://americancompo.s3.ap-south-1.amazonaws.com/american-compo-logo-white.png" style={imgSize}></img>
+              {/* <h5 className="navbar_title_font" id='logText'>American Compo Legal</h5> */}
             </div>
                 {/* <Navbar.Brand style={navbar_title}><h5>American Compo Legal</h5></Navbar.Brand> */}
 

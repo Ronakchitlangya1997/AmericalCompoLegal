@@ -84,7 +84,7 @@ export function Earplugs() {
             <div className="Section4 d-flex">
                 {lawsuitData &&
                 <div className="Section6_3">
-                    <h3 className="Section6_heading1_1">{lawsuitData.name}</h3>
+                    <h3 className="Section6_heading1_1">{lawsuitData.heading}</h3>
                     <p className="Section6_heading2_1">{lawsuitData.text}</p>
                 </div>}
 

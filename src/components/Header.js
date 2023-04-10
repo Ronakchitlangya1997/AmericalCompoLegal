@@ -32,7 +32,8 @@ export function Header() {
 
   const imgSize = {
     width: "auto",
-    height: "100px"
+    height: "100px",
+    paddingLeft: "1rem"
   }
 
   const navbar_button = {
@@ -80,14 +81,21 @@ export function Header() {
     return (
         <Navbar style={navbar} expand="lg">
             <div className="navbar_title">
-              <img src="https://americancompo.s3.ap-south-1.amazonaws.com/american-compo-logo-white.png" width="100%" style={imgSize}></img>
-              {(width>768) && <h5 className="navbar_title_font" id='logText'>American Compo Legal</h5>}
+              <img src="https://americancompo.s3.ap-south-1.amazonaws.com/american-compo-logo-final.png" width="100%" style={imgSize}></img>
+              <div className='navbar_title_all_font'>
+                {(width>768) && <h5 className="navbar_title_font1" id='logText'>American</h5>}
+                {(width>768) && <h5 className="navbar_title_font2" id='logText'>Compo Legal</h5>}
+
+                {/* {(width>768) && <h5 className="navbar_title_font1" id='logText'>American</h5>}
+                {(width>768) && <h5 className="navbar_title_font2" id='logText'>Compo Legal</h5>} */}
+              </div>
             </div>
                 {/* <Navbar.Brand style={navbar_title}><h5>American Compo Legal</h5></Navbar.Brand> */}
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" style={navbar_button}/>
             <Navbar.Collapse id="basic-navbar-nav" style={navbar_subtitle}>
-              <Nav className="dropbtn sizeOfNavbar">
+              <Nav className={width>1049 ? "dropbtn sizeOfNavbar" : "dropbtn"}>
+              {/* <Nav className="dropbtn sizeOfNavbar"> */}
                 <Nav.Link style={navbar_subtitle_fonts} href="/">Home</Nav.Link>
                 <Nav.Link style={navbar_subtitle_fonts} href="/about-us">About Us</Nav.Link>
                 <Dropdown className='dropdownbtn'>
@@ -101,14 +109,14 @@ export function Header() {
                     ))}
                   </Dropdown.Menu>}
                 </Dropdown>  
-                <Nav.Link style={navbar_subtitle_fonts} href="#link">Feedback</Nav.Link>            
+                <Nav.Link style={navbar_subtitle_fonts} href="#contactUsId">Feedback</Nav.Link>            
               </Nav>
             </Navbar.Collapse>
 
-            {(width>768) && 
-            <div className="navbar_title_last" onClick={scrollToSection}>
-              <h5 className="navbar_title_last_font">Call Now</h5>
-            </div>}
+            {(width>991) && 
+              <div className="navbar_title_last" onClick={scrollToSection}>
+                <h5 className="navbar_title_last_font">Call Now</h5>
+              </div>}
         </Navbar>
       );
 }

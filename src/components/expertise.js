@@ -48,9 +48,9 @@ export function Expertise() {
                 ))}
             </div>
             {totalItem && <div className='pagination'>
-                <button onClick={() => {setPage(Math.max(page-1,1)); lawsuitSection.scrollIntoView({ behavior: 'smooth' });}}>&lt; PREV</button>
+                <button onClick={() => {setPage(Math.max(page-1,1)); lawsuitSection.scrollIntoView({ behavior: 'smooth' });}}>PREV</button>
                 <p>Page {page} of {Math.ceil(totalItem/items)}</p>
-                <button onClick={() => {setPage(Math.min(page+1,Math.ceil(totalItem/items))); lawsuitSection.scrollIntoView({ behavior: 'smooth' });}}>NEXT &gt;</button>
+                <button onClick={() => {setPage(Math.min(page+1,Math.ceil(totalItem/items))); lawsuitSection.scrollIntoView({ behavior: 'smooth' });}}>NEXT</button>
             </div>}
         </div>
 

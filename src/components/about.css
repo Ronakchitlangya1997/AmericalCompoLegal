@@ -46,6 +46,7 @@
     flex-wrap: wrap;
     margin-left: 15px;
     flex: 3;
+    justify-content: end;
 }
 
 .section2_2_1{

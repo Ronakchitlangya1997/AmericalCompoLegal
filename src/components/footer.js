@@ -42,14 +42,8 @@ export function Footer() {
                     <p><FontAwesomeIcon icon={faEnvelope} /><span  style={margin}>hello@americancompolegal.com</span></p>
                     <p><FontAwesomeIcon icon={faMobileScreenButton} /><span style={margin}>915 444 6999</span></p>
                     <p><FontAwesomeIcon icon={faLocationDot} /><span style={margin}>108 St Georges Terrace, Perth WA 6000, USA</span></p>
-
                 </div>
             </div>
-
-            <div className="footer_upper_bottom">
-                <p>Terms & Conditions | Privacy Policy</p>
-            </div>
-
         </div>
     </div>
 )

@@ -49,7 +49,7 @@ export function Contact() {
                     firms has a successful track record of handling cases similar to yours.
                 </p>
             </div>
-            <div className="Section4_2">
+            <div className="Section4_2" id="contactUsId">
                 <p className="Section4_2_heding1">Make Your Voice Heard</p>
                 {submitted && <p id="submit-success-id">Successfully Submitted!</p>}
                 <form className="Auth-form" onSubmit={contactUsSubmit}>

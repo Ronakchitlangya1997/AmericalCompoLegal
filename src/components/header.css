@@ -27,6 +27,11 @@
     font-family: revert;
 }
 
+navbar_dropdown_innerelements {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .navbar_title{
     background: #0F2B61;
     text-align: left;
@@ -34,16 +39,29 @@
     flex-direction: row;
 }
 
+.navbar_title_all_font {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 1rem 0rem 0rem;
+}
 
-.navbar_title_font{
+.navbar_title_font1 {
     font-family: inherit;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
     line-height: 32px;
-    display: flex;
-    align-items: center;
-    padding-right: 1rem;
+    color: #FFFFFF;
+    margin-bottom: -.25rem;
+}
+
+.navbar_title_font2 {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
     color: #FFFFFF;
 }
 
@@ -271,7 +289,7 @@ meda
     text-align: left;
     font-family: "Montserrat",sans-serif !important;
     font-size: 17px;
-    font-weight: 800;
+    font-weight: 500;
     color: #fff;
     width: 80%;
 }

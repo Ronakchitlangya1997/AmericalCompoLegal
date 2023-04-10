@@ -43,7 +43,7 @@
     line-height: 32px;
     display: flex;
     align-items: center;
-    
+    padding-right: 1rem;
     color: #FFFFFF;
 }
 
@@ -262,7 +262,7 @@ meda
 
 .Section6_heading1_1{
     text-align: left;
-    font-size: 28px;
+    font-size: 38px;
     line-height: 1.4;
     color: #fff;
 }
@@ -270,7 +270,8 @@ meda
 .Section6_heading2_1{
     text-align: left;
     font-family: "Montserrat",sans-serif !important;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 800;
     color: #fff;
     width: 80%;
 }

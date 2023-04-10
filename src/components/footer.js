@@ -16,10 +16,8 @@ export function Footer() {
         <div className="footer_upper">
             <div className="footer_upper_top">
                 <div className="follow-us">
-                    <h4>Follow Us</h4>
-                    <p>We would like to stay connected with you and keep you updated on
-                        all the latest testimonials of different diseases. That's why we invite
-                        you to follow our social media handles.</p>
+                    <h4>American Compo Legal</h4>
+                    <p>Legal Disclaimer: Please Be Advised That Certain States May Consider This An Attorney Advertisement For Legal Services Paid For By A Non-attorney Spokesperson. American Compo Legal Is An Advertising Group That Represents Lawyers Jointly Advertising Their Services. American Compo Legal Is Not A Law Firm Or Lawyer Referral Service.</p>
                     <div className="follow-us_links">
                         <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         {/* <a href="#"><img src="./Images/Dribbble.png" alt="" /></a> */}
@@ -32,26 +30,18 @@ export function Footer() {
                     <h4>Quick Links</h4>
                     <div className="quick-links_container">
                         <div className="quick-links_container-1">
-                            <a href="#">Home</a>
-                            <a href="#">About</a>
-                            <Link to="/members">Members</Link>
-                            <a href="#"><span>Donate</span></a>
-                        </div>
-                        <div className="quick-links_container-2">
-                            <a href="#">Newsletter</a>
+                            <a href="/">Home</a>
+                            <a href="/about-us">About Us</a>
                             <a href="#">Feedback</a>
-                            <a href="#">Join Us</a>
                         </div>
                     </div>
-
-
                 </div>
 
                 <div className="reach-us">
                     <h4>Reach Us</h4>
-                    <p><FontAwesomeIcon icon={faEnvelope} /><span  style={margin}>hello@HealthUmbrella.com</span></p>
-                    <p><FontAwesomeIcon icon={faMobileScreenButton} /><span style={margin}>0522-2981000</span></p>
-                    <p><FontAwesomeIcon icon={faLocationDot} /><span style={margin}>NGO Office</span></p>
+                    <p><FontAwesomeIcon icon={faEnvelope} /><span  style={margin}>hello@americancompolegal.com</span></p>
+                    <p><FontAwesomeIcon icon={faMobileScreenButton} /><span style={margin}>915 444 6999</span></p>
+                    <p><FontAwesomeIcon icon={faLocationDot} /><span style={margin}>108 St Georges Terrace, Perth WA 6000, USA</span></p>
 
                 </div>
             </div>
@@ -60,11 +50,6 @@ export function Footer() {
                 <p>Terms & Conditions | Privacy Policy</p>
             </div>
 
-        </div>
-
-        <div className="footer_lower">
-            <p><span>Disclaimer:</span> This website does not provide medical advice.</p>
-            <p>The information, including but not limited to text, graphics, images and other material content on the website are for informational purposes only, no material on the site is intended to be a substitute for professional medical advice, diagnosis or treatment.</p>
         </div>
     </div>
 )

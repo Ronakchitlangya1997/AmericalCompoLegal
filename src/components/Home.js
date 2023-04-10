@@ -57,10 +57,10 @@ export function Home() {
                     ))}
                 </select>}
                 <button className='Section1_form_button fontSizeForButton' onClick={(e) => {
-      e.preventDefault();
-      console.log(document.getElementById("cars").value)
-         window.location.href='/'+document.getElementById("cars").value;
-      }}>Get Tour free consultation</button>
+                e.preventDefault();
+                console.log(document.getElementById("cars").value)
+                window.location.href='/active-lawsuit/?name='+document.getElementById("cars").value;
+                }}>Get Tour free consultation</button>
                 <p className='Section1_form_heading3'>Privacy Policy | Terms Of Use</p>
             </div>
 

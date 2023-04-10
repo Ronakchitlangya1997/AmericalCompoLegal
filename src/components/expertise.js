@@ -37,14 +37,14 @@ export function Expertise() {
             <div className="Section3_2">
                 {lawsuitsData &&
                 lawsuitsData.map((item, index) => (
-                    <div className="Section3_2_card">
-                        <a href={`/active-lawsuit/?name=${item.name}`}>
+                    <a href={`/active-lawsuit/?name=${item.name}`}>
+                        <div className="Section3_2_card">
                             <img src={item.imageLink} alt={item.imageLink} className='imageSize'></img>
-                        </a>
-                        <div className="Section3_2_info">
-                            <p className="Section3_2_heading1">{item.name}</p>
+                            <div className="Section3_2_info">
+                                <p className="Section3_2_heading1">{item.name}</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 ))}
             </div>
             {totalItem && <div className='pagination'>

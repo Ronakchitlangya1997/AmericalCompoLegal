@@ -31,7 +31,8 @@ export function Header() {
     }
 
   const imgSize = {
-    width: "10vw",
+    width: "auto",
+    height: "100px"
   }
 
   const navbar_button = {
@@ -66,11 +67,21 @@ export function Header() {
         
       },[]);
 
+      const [width, setWidth] = useState(window.innerWidth);
+
+      const currentScreenWidth = () =>{
+          setWidth(window.innerWidth);
+      }
+
+      useEffect(()=>{
+          window.addEventListener("resize",currentScreenWidth);
+      });
+
     return (
         <Navbar style={navbar} expand="lg">
             <div className="navbar_title">
-              <img src="https://americancompo.s3.ap-south-1.amazonaws.com/american-compo-logo-white.png" style={imgSize}></img>
-              {/* <h5 className="navbar_title_font" id='logText'>American Compo Legal</h5> */}
+              <img src="https://americancompo.s3.ap-south-1.amazonaws.com/american-compo-logo-white.png" width="100%" style={imgSize}></img>
+              {(width>768) && <h5 className="navbar_title_font" id='logText'>American Compo Legal</h5>}
             </div>
                 {/* <Navbar.Brand style={navbar_title}><h5>American Compo Legal</h5></Navbar.Brand> */}
 
@@ -94,9 +105,10 @@ export function Header() {
               </Nav>
             </Navbar.Collapse>
 
-            <div className="navbar_title_last">
-            <h5 className="navbar_title_last_font" onClick={scrollToSection}>Call Now</h5>
-            </div>
+            {(width>768) && 
+            <div className="navbar_title_last" onClick={scrollToSection}>
+              <h5 className="navbar_title_last_font">Call Now</h5>
+            </div>}
         </Navbar>
       );
 }

@@ -60,9 +60,12 @@
     flex-direction: row;
 }
 
+.Section3_2 a {
+    text-decoration: none;
+}
+
 .Section3_2_card{
     font-family: liberation-sans;
-    width: 30vw;
     border: 1px solid #EFEFEF;
     margin-top: 30px;
 }

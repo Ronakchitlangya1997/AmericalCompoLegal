@@ -10,28 +10,28 @@ export function Contact() {
     const [message, setMessage] = useState("")
     const [submitted, setSubmitted] = useState(false);
 
-const contactUsSubmit = (event) => {
-    event.preventDefault();
-    try {
-        axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/contact-us/?fname=${encodeURIComponent(firstName)}&lname=${encodeURIComponent(LastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`)
-        setSubmitted(true);
-        document.getElementById('fname').value = "";
-        document.getElementById('lname').value = "";
-        document.getElementById('email').value = "";
-        document.getElementById('phone').value = "";
-        document.getElementById('message').value = "";
-        setFirstName("");
-        setLastName("");
-        setEmail("");
-        setPhone("");
-        setMessage("");
-        setTimeout(() => {
-            setSubmitted(false);
-        }, 1000);
-    }catch {
+    const contactUsSubmit = (event) => {
+        event.preventDefault();
+        try {
+            axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/contact-us/?fname=${encodeURIComponent(firstName)}&lname=${encodeURIComponent(LastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`)
+            setSubmitted(true);
+            document.getElementById('fname').value = "";
+            document.getElementById('lname').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('phone').value = "";
+            document.getElementById('message').value = "";
+            setFirstName("");
+            setLastName("");
+            setEmail("");
+            setPhone("");
+            setMessage("");
+            setTimeout(() => {
+                setSubmitted(false);
+            }, 1000);
+        }catch {
 
+        }
     }
-}
 
     return (
         <div className="Section4 d-flex">

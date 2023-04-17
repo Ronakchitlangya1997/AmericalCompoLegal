@@ -1,15 +1,16 @@
 .Section2{
     margin-top: 100px;
-    justify-content: space-around;
+    margin-left: 92px;
+    margin-right: 92px;
 }
 
 .section2_1{
-    width: 350px;
+   flex: 1;
     margin-top: 90px;
 }
 
 .section2_1_heading1{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -21,7 +22,7 @@
 }
 
 .section2_1_heading2{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
@@ -32,7 +33,7 @@
 }
 
 .section2_1_heading3{
-    font-family: 'Open Sans';
+    font-family: open-sans;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -42,8 +43,10 @@
 }
 
 .section2_2{
-    width: 800px;
     flex-wrap: wrap;
+    margin-left: 15px;
+    flex: 3;
+    justify-content: end;
 }
 
 .section2_2_1{
@@ -53,7 +56,7 @@
 }
 
 .section2_2_1_heading1{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -65,7 +68,7 @@
 }
 
 .section2_2_1_heading2{
-    font-family: 'Open Sans';
+    font-family: open-sans;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -81,7 +84,7 @@
 }
 
 .section2_2_1_box_heading1{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
@@ -91,7 +94,7 @@
 }
 
 .section2_2_1_box_heading2{
-    font-family: 'Liberation Sans';
+    font-family: liberation-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
@@ -100,4 +103,17 @@
     letter-spacing: 1.3px;
     text-transform: uppercase;
     color: #012346;
+}
+
+/* @media screen and (max-width: 885px){
+    .Section2{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+} */
+
+@media screen and (max-width: 700px){
+    .Section2{
+        flex-direction: column;
+    }
 }

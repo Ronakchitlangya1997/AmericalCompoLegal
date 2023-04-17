@@ -1,28 +1,36 @@
 import React from 'react';
-import axios from "axios";
-import {useState} from "react";
+import { useState } from 'react';
+import axios from 'axios';
 
 export function Contact() {
-    const [firstname, setFirstname] = useState('');
-    const [lastname, setLastname] = useState('');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
-    const [message, setMessage] = useState('');
-    
-    const submit = async e => {
-        e.preventDefault();
+    const [firstName, setFirstName] = useState("")
+    const [LastName, setLastName] = useState("")
+    const [email, setEmail] = useState("")
+    const [phone, setPhone] = useState("")
+    const [message, setMessage] = useState("")
+    const [submitted, setSubmitted] = useState(false);
 
-        const user = {
-            firstname: firstname,
-            lastname: lastname,
-            email:email,
-            phone:phone,
-            message:message
-          };
-        console.log(user)
-        const {data} = await axios.post('http://65.0.139.82//leadsamerican-compo-legel/', user ,{headers: {
-            'Content-Type': 'application/json'
-        }});
+    const contactUsSubmit = (event) => {
+        event.preventDefault();
+        try {
+            axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/contact-us/?fname=${encodeURIComponent(firstName)}&lname=${encodeURIComponent(LastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`)
+            setSubmitted(true);
+            document.getElementById('fname').value = "";
+            document.getElementById('lname').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('phone').value = "";
+            document.getElementById('message').value = "";
+            setFirstName("");
+            setLastName("");
+            setEmail("");
+            setPhone("");
+            setMessage("");
+            setTimeout(() => {
+                setSubmitted(false);
+            }, 1000);
+        }catch {
+
+        }
     }
 
     return (
@@ -41,36 +49,16 @@ export function Contact() {
                     firms has a successful track record of handling cases similar to yours.
                 </p>
             </div>
-            <div className="Section4_2">
+            <div className="Section4_2" id="contactUsId">
                 <p className="Section4_2_heding1">Make Your Voice Heard</p>
-                <form className="Auth-form" onSubmit={submit}>
+                {submitted && <p id="submit-success-id">Successfully Submitted!</p>}
+                <form className="Auth-form" onSubmit={contactUsSubmit}>
                     <div className='Section4_2_inputbox d-flex'>
-                        <input className="Section4_2_input" type="text" 
-                        id="firstname" name="firstname" 
-                        placeholder='First Name' 
-                        value={firstname}
-                        required
-                        onChange={e => setFirstname(e.target.value)}/>
-                        <input className="Section4_2_input" type="text" id="lastname" 
-                        name="lastname" placeholder='Last Name'
-                        value={lastname}
-                        required
-                        onChange={e => setLastname(e.target.value)}/>
-                        <input className="Section4_2_input" type="email" id="email" 
-                        name="email" placeholder='Email'
-                        value={email}
-                        required
-                        onChange={e => setEmail(e.target.value)}/>
-                        <input className="Section4_2_input" type="number" id="phone" 
-                        name="phone" placeholder='Phone'
-                        value={phone}
-                        required
-                        onChange={e => setPhone(e.target.value)}/>
-                        <textarea className="Section4_2_input messbox" type="text" id="message" 
-                        name="message" placeholder='Type Your Message Here'
-                        value={message}
-                        required
-                        onChange={e => setMessage(e.target.value)}/>
+                        <input className="Section4_2_input" type="text" id="fname" name="fname" placeholder='First Name' onChange={(event) => setFirstName(event.target.value)}/>
+                        <input className="Section4_2_input" type="text" id="lname" name="lname" placeholder='Last Name'onChange={(event) => setLastName(event.target.value)}/>
+                        <input className="Section4_2_input" type="text" id="email" name="email" placeholder='Email' onChange={(event) => setEmail(event.target.value)}/>
+                        <input className="Section4_2_input" type="text" id="phone" name="phone" placeholder='Phone' onChange={(event) => setPhone(event.target.value)}/>
+                        <textarea className="Section4_2_input messbox" type="text" id="message" name="message" placeholder='Type Your Message Here' onChange={(event) => setMessage(event.target.value)}/>
                     </div>
                     <button className="Section4_2_form_button" type="submit">
                         Submit

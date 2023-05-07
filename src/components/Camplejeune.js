@@ -20,7 +20,12 @@ export function Camplejeune() {
 
                         <p className="Section6_heading2">70+ harmful chemicals like trichloroethylene (TCE), perchloroethylene (PCE), benzene and vinyl chloride were found in drinking water at Camp Lejeune - these are known Carcinogens.</p>
                     </div>
-                    <div className="Section6_3">
+                    
+                </div>
+             </div>   
+
+            <div className="Section4 d-flex">
+                <div className="Section6_3">
                         <h3 className="Section6_heading1_1">What is Camp lejeune?</h3>
                         <p className="Section6_heading2_1">Contaminated water contains harmful chemicals which have caused cancer like diseases.</p>
 
@@ -29,25 +34,22 @@ export function Camplejeune() {
                         <p className="Section6_heading2_1">Due to chemicals in the drinking water, many from the military or their families witnessed the side effects in their health. This caused undue suffering, permanent disability, and loss.</p>
 
                         <p className="Section6_heading2_1">So if you or any of your family members served at Camp Lejeune and were diagnosed with side effects, then you can contact us for your medical claim.</p>
-                    </div>
                 </div>
-
-                <div className="Section6_2_form_box">
-                    <p className="Section6_2_heding1">Contact Us</p>
+                <div className="Section4_2">
+                    <p className="Section4_2_heding1">Make Your Voice Heard</p>
                     <form className="Auth-form">
-                        <div className='Section6_2_inputbox d-flex'>
+                        <div className='Section4_2_inputbox d-flex'>
                             <input className="Section4_2_input" type="text" id="fname" name="fname" placeholder='First Name'/>
                             <input className="Section4_2_input" type="text" id="lname" name="lname" placeholder='Last Name'/>
                             <input className="Section4_2_input" type="text" id="email" name="email" placeholder='Email'/>
                             <input className="Section4_2_input" type="text" id="phone" name="phone" placeholder='Phone'/>
                             <textarea className="Section4_2_input messbox" type="text" id="message" name="message" placeholder='Type Your Message Here'/>
                         </div>
-                        <button className="Section6_2_form_button" type="submit">
+                        <button className="Section4_2_form_button" type="submit">
                             Submit
                         </button>
                     </form>
-            </div>
-
+                </div>
             </div>
         </div>
     )}

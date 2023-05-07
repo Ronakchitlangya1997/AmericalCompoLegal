@@ -20,7 +20,12 @@ export function Talcum() {
 
                         <p className="Section6_heading2">Over 40+ years of research of talcum powder found a strong connection for diagnosis with cancer like mesothelioma and ovarian by use of the talcum powder. Many cases have been filed against the manufacturers like Johnson and Johnson and others who also didn’t warn their users about the potential harm they could have while using their product.</p>
                     </div>
-                    <div className="Section6_3">
+                   
+                </div>
+            </div>   
+
+            <div className="Section4 d-flex">
+                <div className="Section6_3">
                         <h3 className="Section6_heading1_1">What is Talcum?</h3>
                         <p className="Section6_heading2_1">Talcum powder is made up of TALC (a naturally occurring mineral composed of 4 elements: magnesium, silicon, hydrogen & oxygen ) which is used in making baby powder, shower to shower, cosmetics & deodorant, and in some others.</p>
 
@@ -29,25 +34,22 @@ export function Talcum() {
                         <p className="Section6_heading2_1"></p>
 
                         <p className="Section6_heading2_1"></p>
-                    </div>
                 </div>
-
-                <div className="Section6_2_form_box">
-                    <p className="Section6_2_heding1">Contact Us</p>
+                <div className="Section4_2">
+                    <p className="Section4_2_heding1">Make Your Voice Heard</p>
                     <form className="Auth-form">
-                        <div className='Section6_2_inputbox d-flex'>
+                        <div className='Section4_2_inputbox d-flex'>
                             <input className="Section4_2_input" type="text" id="fname" name="fname" placeholder='First Name'/>
                             <input className="Section4_2_input" type="text" id="lname" name="lname" placeholder='Last Name'/>
                             <input className="Section4_2_input" type="text" id="email" name="email" placeholder='Email'/>
                             <input className="Section4_2_input" type="text" id="phone" name="phone" placeholder='Phone'/>
                             <textarea className="Section4_2_input messbox" type="text" id="message" name="message" placeholder='Type Your Message Here'/>
                         </div>
-                        <button className="Section6_2_form_button" type="submit">
+                        <button className="Section4_2_form_button" type="submit">
                             Submit
                         </button>
                     </form>
-            </div>
-
+                </div>
             </div>
         </div>
     )}

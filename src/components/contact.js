@@ -9,12 +9,14 @@ export function Contact() {
     const [phone, setPhone] = useState("")
     const [message, setMessage] = useState("")
     const [submitted, setSubmitted] = useState(false);
+    const [formsubmitted, setFormSubmitted] = useState(true);
 
     const contactUsSubmit = (event) => {
         event.preventDefault();
         try {
             axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/contact-us/?fname=${encodeURIComponent(firstName)}&lname=${encodeURIComponent(LastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`)
             setSubmitted(true);
+            setFormSubmitted(false);
             document.getElementById('fname').value = "";
             document.getElementById('lname').value = "";
             document.getElementById('email').value = "";
@@ -27,6 +29,8 @@ export function Contact() {
             setMessage("");
             setTimeout(() => {
                 setSubmitted(false);
+                setFormSubmitted(true);
+
             }, 1000);
         }catch {
 
@@ -36,6 +40,7 @@ export function Contact() {
     return (
         <div className="Section4 d-flex">
             <div className="Section4_1">
+                <img src="https://americancompo.s3.ap-south-1.amazonaws.com/Stamp_Image.png"></img>
                 <p className="Section4_1_heading1">Request a Free Case Review</p>
                 <p className="Section4_1_heading2">No Cost, No Obligation</p>
                 <p className="Section4_1_heading3">or If You have a Referral</p>
@@ -51,8 +56,12 @@ export function Contact() {
             </div>
             <div className="Section4_2" id="contactUsId">
                 <p className="Section4_2_heding1">Make Your Voice Heard</p>
-                {submitted && <p id="submit-success-id">Successfully Submitted!</p>}
-                <form className="Auth-form" onSubmit={contactUsSubmit}>
+                {submitted && <div>
+                <img className="formsubmit_success" src="https://thumbs.dreamstime.com/b/tick-icon-green-circle-vector-symbol-round-checkmark-isolated-white-checked-correct-choice-sign-background-check-mark-100120260.jpg"></img>
+                <p id="submit-success-id">Successfully Submitted!</p>
+                </div>
+                }
+                {formsubmitted && <form className="Auth-form" onSubmit={contactUsSubmit}>
                     <div className='Section4_2_inputbox d-flex'>
                         <input className="Section4_2_input" type="text" id="fname" name="fname" placeholder='First Name' onChange={(event) => setFirstName(event.target.value)}/>
                         <input className="Section4_2_input" type="text" id="lname" name="lname" placeholder='Last Name'onChange={(event) => setLastName(event.target.value)}/>
@@ -63,7 +72,7 @@ export function Contact() {
                     <button className="Section4_2_form_button" type="submit">
                         Submit
                     </button>
-                </form>
+                </form>}
             </div>
         </div>
         )}

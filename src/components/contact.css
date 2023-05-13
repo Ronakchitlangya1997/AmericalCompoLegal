@@ -10,9 +10,18 @@
     padding-right: 15px;
 }
 
+.Section4_details{
+    background: url(https://americancompo.s3.ap-south-1.amazonaws.com/Request+free+revewi.png) no-repeat center center;
+    background-size: cover;
+    height: 650px;
+    color: #FFFFFF;
+    padding-right: 15px;
+}
+
 .Section4_1{
     width: 600px;    
     margin-top: 70px;
+    text-align: left;
 }
 
 .Section4_1_heading1{
@@ -80,6 +89,16 @@
     padding: 42px 28px 36px 28px;
 }
 
+.Section4_2_details{
+    width: 551px;
+    height: 710px;
+    background-color: #FFFFFF;
+    padding: 42px 28px 36px 28px;
+    position: absolute;
+    top: 170px;
+    right: 80px;
+}
+
 .Section4_2_heding1{
     font-family: liberation-sans;
     font-style: normal;
@@ -135,8 +154,12 @@
     color: #FF5601;
 }
 
+.formsubmit_success{
+    width: 100%;
+}
+
 @media screen and (max-width: 500px){
-    .Section4{
+    .Section4, .Section4_details{
         height: auto !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -152,10 +175,26 @@
         height: auto !important;
     }
 
+    .Section4_2_details{
+        height: auto !important;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+
     .Section4_2{
       margin-top: 10px !important;
       margin-bottom: 10px !important;
       width: 85% !important;
+    }
+
+    .Section4_2_details{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        width: 85% !important;
+        position: relative;
+        top: 0px;
+        right: 0px;
     }
 
     .Section4_2_heding1{
@@ -165,12 +204,20 @@
 
 }
 
-@media screen and ((max-width: 1100px) and (min-width:501px)){
+
+
+@media screen and ((max-width: 1200px) and (min-width:501px)){
     .Section4_2{
         width: 476px !important;
     }
+    .Section4_2_details{
+        width: 476px !important;
+        right: 5px;
+        height: auto;
+    }
     .Section4_2_heding1 {
         font-size: 45px !important;
+        padding-right: 0;
     }
 }
 
@@ -204,7 +251,7 @@
 }
 
 @media screen and (max-width: 980px){
-    .Section4{
+    .Section4, .Section4_details{
         height: auto !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -216,29 +263,38 @@
         margin-bottom: 10px !important;
     }
 
+    .Section4_2_details{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+
     .Section4_1{
         width: auto !important;
-        padding-left: 15px;
+        padding-left: 0px;
         padding-right: 15px;
+        margin-left: 33px;
     }
 
 
     .Section4_1_heading1{
-        text-align: center !important;
+        text-align: left !important;
         padding-right: 0px !important;
     }
     .Section4_1_heading2{
-        text-align: center !important;
+        text-align: left !important;
     }
     .Section4_1_heading3{
-        text-align: center !important;
+        text-align: left !important;
     }
     .Section4_1_heading4{
-        text-align: center !important;
+        text-align: left !important;
     }
 
     .Section4_1_heading5{
-        text-align: center !important;
+        text-align: left !important;
     }
 
     
@@ -247,5 +303,12 @@
         margin-bottom: 10px !important;
       }
 
+      .Section4_2_details{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
 
 }

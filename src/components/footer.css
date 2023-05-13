@@ -20,6 +20,31 @@
     font-weight: 700;
 }
 
+.Footer-heading{
+    font-family: liberation-sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.Footer-subheading{
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.footer_icon{
+    color: white;
+    background: #38495b;
+    text-align: center;
+    width: 27px;
+    height: 26px;
+    border-radius: 50%;
+}
 /*------------------------------------------------------------------------------------------------------------*/
 
 .footer_upper_bottom {
@@ -155,6 +180,10 @@
     margin-bottom: 1rem;
 }
 
+.vertical {
+    border-left: 2px solid white;
+    height: 20px;
+  }
 
 .follow-us_links {
     display: flex;

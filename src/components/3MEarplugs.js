@@ -40,7 +40,7 @@ export function Earplugs() {
     useEffect(()=>{
         const getapidata = async () => {
           try{
-            const datafetch = await axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/active-lawsuits/?name=${lawsuitName}`);
+            const datafetch = await axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/active-lawsuits/?name=${lawsuitName}`);
             console.log(datafetch)
             setLawsuitData(datafetch.data);
           }catch(error){  
@@ -81,14 +81,14 @@ export function Earplugs() {
 
 
 
-            <div className="Section4 d-flex">
+            <div className="Section4_details d-flex">
                 {lawsuitData &&
                 <div className="Section6_3">
-                    <h3 className="Section6_heading1_1">{lawsuitData.heading}</h3>
+                    {/* <h3 className="Section6_heading1_1">{lawsuitData.heading}</h3> */}
                     <p className="Section6_heading2_1">{lawsuitData.text}</p>
                 </div>}
 
-                <div className="Section4_2">
+                <div className="Section4_2_details">
                     <p className="Section4_2_heding1">Make Your Voice Heard</p>
                     {submitted && <p id="submit-success-id">Successfully Submitted!</p>}
                     <form className="Auth-form" onSubmit={contactUsSubmit}>

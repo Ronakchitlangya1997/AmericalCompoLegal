@@ -6,6 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Dropdown from 'react-bootstrap/Dropdown';
 import axios from 'axios';
 
+
 export function Header() {
 
     const navbar = {
@@ -14,8 +15,8 @@ export function Header() {
       };
 
     const navbar_subtitle={
-        justifyContent: "center",
-        margin: "0px 50px"
+        justifyContent: "end",
+        margin: "0px 30px"
     }
 
     const navbar_subtitle_fonts = {
@@ -106,6 +107,7 @@ export function Header() {
                   <Dropdown.Menu>
                     {lawsuitsData.map((item, index) => (
                         <Dropdown.Item className='dropdownbtntext' href={"/active-lawsuit/?name="+item} key={index} value={item}>{item}</Dropdown.Item>
+
                     ))}
                   </Dropdown.Menu>}
                 </Dropdown>  

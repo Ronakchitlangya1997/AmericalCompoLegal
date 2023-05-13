@@ -40,17 +40,18 @@ export function Expertise() {
                     <a href={`/active-lawsuit/?name=${item.name}`}>
                         <div className="Section3_2_card">
                             <img src={item.imageLink} alt={item.imageLink} className='imageSize'></img>
-                            <div className="Section3_2_info">
+                            <div className="Section3_2_info d-flex justify-content-sm-between">
                                 <p className="Section3_2_heading1">{item.name}</p>
+                                <p className="Section3_2_heading1_arr">&rarr;</p>
                             </div>
                         </div>
                     </a>
                 ))}
             </div>
             {totalItem && <div className='pagination'>
-                <button onClick={() => {setPage(Math.max(page-1,1)); lawsuitSection.scrollIntoView({ behavior: 'smooth' });}}>PREV</button>
-                <p>Page {page} of {Math.ceil(totalItem/items)}</p>
-                <button onClick={() => {setPage(Math.min(page+1,Math.ceil(totalItem/items))); lawsuitSection.scrollIntoView({ behavior: 'smooth' });}}>NEXT</button>
+                <button onClick={() => {setPage(Math.max(page-1,1)); lawsuitSection.scrollIntoView({ behavior: 'smooth' });}}>&laquo; PREV</button>
+                <p className='pagination_info'>Page {page} of {Math.ceil(totalItem/items)}</p>
+                <button onClick={() => {setPage(Math.min(page+1,Math.ceil(totalItem/items))); lawsuitSection.scrollIntoView({ behavior: 'smooth' });}}>NEXT &raquo;</button>
             </div>}
         </div>
 

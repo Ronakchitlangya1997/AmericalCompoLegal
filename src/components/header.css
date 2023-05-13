@@ -37,6 +37,8 @@ navbar_dropdown_innerelements {
     text-align: left;
     display: flex;
     flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .navbar_title_all_font {
@@ -239,6 +241,7 @@ meda
 }
 
 .Section6_heading{
+    font-family: liberation-sans;
     color: #fff !important;
     text-transform: capitalize;
     text-align: left;
@@ -246,7 +249,7 @@ meda
     font-size: 54px !important;
     position: absolute;
     top: 120px;
-    margin-left: 61px;
+    margin-left: 50px;
     font-weight: 600;
 }
 
@@ -259,7 +262,7 @@ meda
 
 .Section6_heading1{
     text-align: left;
-    font-family: "Montserrat",sans-serif !important;
+    font-family: open-sans;
     font-weight: 400;
 }
 
@@ -287,11 +290,12 @@ meda
 
 .Section6_heading2_1{
     text-align: left;
-    font-family: "Montserrat",sans-serif !important;
+    /* font-family: "Montserrat",sans-serif !important; */
     font-size: 17px;
     font-weight: 500;
     color: #fff;
     width: 80%;
+    font-family: open-sans;
 }
 
 .Section6_2_1{
@@ -443,13 +447,16 @@ meda
     }
 
     .Section6_heading1_1{
-        text-align: center !important;
+        text-align: left !important;
         width: auto !important;
     }
 
     .Section6_heading2_1{
-        text-align: center !important;
+        text-align: left !important;
         width: auto !important;
+    }
+    .Section6_heading{
+        margin-left: 10px;
     }
 }
 
@@ -469,6 +476,7 @@ meda
     }
     .Section1_info{
         margin-top: 7%;
+        margin-left: 33px;
     }
 
     .Section1_form{
@@ -477,16 +485,18 @@ meda
     }
 
     .Section1_Heading1{
-        text-align: center !important;
+        text-align: left !important;
+        font-weight: 600;
     }
     .Section1_Heading2{
-        text-align: center !important;
+        text-align: left !important;
+        font-weight: 900;
     }
     .Section1_Heading3{
-        text-align: center !important;
+        text-align: left !important;
     }
     .Section1_Heading4{
-        text-align: center !important;
+        text-align: left !important;
     }
 
     #logText{
@@ -498,7 +508,7 @@ meda
     }
 
     .Section1_Heading1{
-        font-size: 15px !important;
+        font-size: 20px !important;
     }
 
     .Section1_Heading2{
@@ -550,7 +560,8 @@ meda
 
 .sizeOfNavbar{
     width: 60%;
-    justify-content: space-between;
+    justify-content: right;
+    gap: 30px;
 }
 
 @media screen and (max-width: 700px){

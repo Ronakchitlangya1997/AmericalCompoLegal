@@ -1,33 +1,76 @@
 import React from 'react';
-import axios from "axios";
-import {useState} from "react";
+import { useState } from 'react';
+import axios from 'axios';
 
 export function Contact() {
-    const [firstname, setFirstname] = useState('');
-    const [lastname, setLastname] = useState('');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
-    const [message, setMessage] = useState('');
-    
-    const submit = async e => {
-        e.preventDefault();
+    const [firstName, setFirstName] = useState("")
+    const [LastName, setLastName] = useState("")
+    const [email, setEmail] = useState("")
+    const [phone, setPhone] = useState("")
+    const [message, setMessage] = useState("")
+    const [submitted, setSubmitted] = useState(false);
+    const [formsubmitted, setFormSubmitted] = useState(true);
 
-        const user = {
-            firstname: firstname,
-            lastname: lastname,
-            email:email,
-            phone:phone,
-            message:message
-          };
-        console.log(user)
-        const {data} = await axios.post('http://65.0.139.82//leadsamerican-compo-legel/', user ,{headers: {
-            'Content-Type': 'application/json'
-        }});
+    const contactUsSubmit = (event) => {
+        event.preventDefault();
+        try {
+            axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/contact-us/?fname=${encodeURIComponent(firstName)}&lname=${encodeURIComponent(LastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`)
+            setSubmitted(true);
+            setFormSubmitted(false);
+            document.getElementById('fname').value = "";
+            document.getElementById('lname').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('phone').value = "";
+            document.getElementById('message').value = "";
+            setFirstName("");
+            setLastName("");
+            setEmail("");
+            setPhone("");
+            setMessage("");
+            setTimeout(() => {
+                setSubmitted(false);
+                setFormSubmitted(true);
+
+            }, 1000);
+        }catch {
+
+        }
     }
+
+   let businessEmailBtn = document.getElementById('email');
+   let submitBtn = document.getElementById('submitBtnId');
+   let firstValidation = document.getElementById('fname');
+   let lastNameValidation = document.getElementById('lname');
+   let phoneValidation = document.getElementById('phone');
+   let messageContent = document.getElementById('messageContact');
+    function ValidateEmail() {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var val = businessEmailBtn.value;
+        if (val.match(validRegex) || val.length === 0) {
+           document.getElementById('emailMessage').style.display = "none";
+           businessEmailBtn.style.border ='1px solid #ced4da';
+           submitBtn.disabled = false;
+           validation();
+         } else {
+           document.getElementById('emailMessage').style.display = "block";	
+           businessEmailBtn.style.border = '2px solid red';
+           submitBtn.disabled = true;
+           validation();
+         }
+      }
+
+      function validation( ) {
+        if(firstValidation.value && lastNameValidation.value && phoneValidation.value && businessEmailBtn.value.length > 0 && businessEmailBtn.validity.valid && messageContent.value){
+            submitBtn.disabled = false;
+        }else{
+            submitBtn.disabled = true;
+        }
+      }
 
     return (
         <div className="Section4 d-flex">
             <div className="Section4_1">
+                <img src="https://americancompo.s3.ap-south-1.amazonaws.com/Stamp_Image.png"></img>
                 <p className="Section4_1_heading1">Request a Free Case Review</p>
                 <p className="Section4_1_heading2">No Cost, No Obligation</p>
                 <p className="Section4_1_heading3">or If You have a Referral</p>
@@ -41,41 +84,26 @@ export function Contact() {
                     firms has a successful track record of handling cases similar to yours.
                 </p>
             </div>
-            <div className="Section4_2">
+            <div className="Section4_2" id="contactUsId">
                 <p className="Section4_2_heding1">Make Your Voice Heard</p>
-                <form className="Auth-form" onSubmit={submit}>
+                {submitted && <div>
+                <img className="formsubmit_success" src="https://thumbs.dreamstime.com/b/tick-icon-green-circle-vector-symbol-round-checkmark-isolated-white-checked-correct-choice-sign-background-check-mark-100120260.jpg"></img>
+                <p id="submit-success-id">Successfully Submitted!</p>
+                </div>
+                }
+                {formsubmitted && <form className="Auth-form" onSubmit={contactUsSubmit}>
                     <div className='Section4_2_inputbox d-flex'>
-                        <input className="Section4_2_input" type="text" 
-                        id="firstname" name="firstname" 
-                        placeholder='First Name' 
-                        value={firstname}
-                        required
-                        onChange={e => setFirstname(e.target.value)}/>
-                        <input className="Section4_2_input" type="text" id="lastname" 
-                        name="lastname" placeholder='Last Name'
-                        value={lastname}
-                        required
-                        onChange={e => setLastname(e.target.value)}/>
-                        <input className="Section4_2_input" type="email" id="email" 
-                        name="email" placeholder='Email'
-                        value={email}
-                        required
-                        onChange={e => setEmail(e.target.value)}/>
-                        <input className="Section4_2_input" type="number" id="phone" 
-                        name="phone" placeholder='Phone'
-                        value={phone}
-                        required
-                        onChange={e => setPhone(e.target.value)}/>
-                        <textarea className="Section4_2_input messbox" type="text" id="message" 
-                        name="message" placeholder='Type Your Message Here'
-                        value={message}
-                        required
-                        onChange={e => setMessage(e.target.value)}/>
+                        <input className="Section4_2_inputTop" type="text" id="fname" name="fname" placeholder='First Name' onChange={(event) => {setFirstName(event.target.value); validation()}}/>
+                        <input className="Section4_2_inputContact" type="text" id="lname" name="lname" placeholder='Last Name'onChange={(event) => {setLastName(event.target.value) ; validation()}}/>
+                        <input className="Section4_2_inputContact" type="email" id="email" name="email" placeholder='Email' onChange={(event) => {setEmail(event.target.value); ValidateEmail()}}/>
+                        <span id='emailMessage' className="emailError">Email id is not valid</span>
+                        <input className="Section4_2_inputContact" type="text" id="phone" name="phone" placeholder='Phone' onChange={(event) => {setPhone(event.target.value) ; validation()}}/>
+                        <textarea className="Section4_2_inputTextArea messbox" type="text" id="messageContact" name="message" placeholder='Type Your Message Here' onChange={(event) => {setMessage(event.target.value) ;validation()}}/>
                     </div>
-                    <button className="Section4_2_form_button" type="submit">
+                    <button className="Section4_2_form_button" id='submitBtnId' type="submit" disabled>
                         Submit
                     </button>
-                </form>
+                </form>}
             </div>
         </div>
         )}

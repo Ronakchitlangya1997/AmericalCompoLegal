@@ -1,17 +1,21 @@
 import React from 'react';
 
+const imgSize  = {
+    width:"100%"
+}
+
 export function About() {
 
     return (
-        <div className="Section2 d-flex">
-            <div className="section2_1">
+        <div className="Section2 d-flex ">
+            <div className="section2_1 reveal">
                 <p className="section2_1_heading1">Why Choose</p>
                 <p className="section2_1_heading2">American Compo Legal</p>
                 <p className="section2_1_heading3">
                 Choose our company for your personal injury case because we work on a contingency fee basis and connect you to the best attorney for your case. We provide personal counseling to ensure a detailed understanding of your case and a smooth compensation process. Additionally, we guarantee 100% privacy for your sensitive information.
                 </p>
             </div>
-            <div className="section2_2 d-flex">
+            <div className="section2_2 d-flex reveal">
                 <div className="section2_2_1">
                     <p className="section2_2_1_heading1">No Win, No Fee</p>
                     <p className="section2_2_1_heading2">
@@ -23,7 +27,7 @@ export function About() {
                 <div className="section2_2_1">
                     <p className="section2_2_1_heading1">Top Attorneys</p>
                     <p className="section2_2_1_heading2">
-                    To increase the chances of winning your case, Lawyer4Help connects 
+                    To increase the chances of winning your case, American Compo Legal connects 
                     you to the best attorney who is perfectly suitable for your personal injury case.
                     </p>
                 </div>
@@ -50,7 +54,7 @@ export function About() {
                     </p>
                 </div>
                 <div className="section2_2_1">
-                    <img src="https://americancompo.s3.ap-south-1.amazonaws.com/Case+solved.png" width="360"></img>
+                    <img src="https://americancompo.s3.ap-south-1.amazonaws.com/Case+solved.png" width="360" style={imgSize}></img>
                     <div className="section2_2_1_box">
                         <p className="section2_2_1_box_heading1">3500+</p>
                         <p className="section2_2_1_box_heading2">Clients Helped</p>

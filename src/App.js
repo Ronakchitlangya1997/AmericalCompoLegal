@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Router, Route} from 'react-router-dom';
 import axios from "axios";
 import {Navigate} from "react-router-dom";
 import {Header} from './components/Header';
@@ -20,25 +20,27 @@ import './components/about.css'
 import './components/expertise.css'
 import './components/contact.css'
 import './components/footer.css'
+import { AboutUs } from './components/about-us';
+
 
 function App() {
   document.title = "American Compo Legal"
   return (
     <BrowserRouter>   
-    <div className="App">
-    <Header></Header>
-      <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/paraquat" element={<Earplugs/>}/>
-            <Route path="/zantac" element={<Zantac/>}/>
-            <Route path="/nec" element={<Nec/>}/>
-            <Route path="/camplejeune" element={<Camplejeune/>}/>
-            <Route path="/hairrelaxer" element={<Hairrelaxer/>}/>
-            <Route path="/talcum" element={<Talcum/>}/>
-            
+      <div className="App">
+        <Header></Header>
+        <Routes>
+          <Route path="/" exact element={<Home/>}/>
+          <Route path="active-lawsuit/" element={<Earplugs/>}/>
+          <Route path="about-us/" element={<About/>}/>
+          {/* <Route path="/zantac" element={<Zantac/>}/>
+          <Route path="/nec" element={<Nec/>}/>
+          <Route path="/camplejeune" element={<Camplejeune/>}/>
+          <Route path="/hairrelaxer" element={<Hairrelaxer/>}/>
+          <Route path="/talcum" element={<Talcum/>}/> */}
         </Routes>
-      <Footer></Footer>
-    </div>
+        <Footer></Footer>
+      </div>
     </BrowserRouter>
  
   );

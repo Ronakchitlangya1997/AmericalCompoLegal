@@ -7,15 +7,15 @@ const imgSize  = {
 export function About() {
 
     return (
-        <div className="Section2 d-flex">
-            <div className="section2_1">
+        <div className="Section2 d-flex ">
+            <div className="section2_1 reveal">
                 <p className="section2_1_heading1">Why Choose</p>
                 <p className="section2_1_heading2">American Compo Legal</p>
                 <p className="section2_1_heading3">
                 Choose our company for your personal injury case because we work on a contingency fee basis and connect you to the best attorney for your case. We provide personal counseling to ensure a detailed understanding of your case and a smooth compensation process. Additionally, we guarantee 100% privacy for your sensitive information.
                 </p>
             </div>
-            <div className="section2_2 d-flex">
+            <div className="section2_2 d-flex reveal">
                 <div className="section2_2_1">
                     <p className="section2_2_1_heading1">No Win, No Fee</p>
                     <p className="section2_2_1_heading2">

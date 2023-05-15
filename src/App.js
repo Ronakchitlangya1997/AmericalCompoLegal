@@ -5,6 +5,7 @@ import {Navigate} from "react-router-dom";
 import {Header} from './components/Header';
 import {Home} from './components/Home';
 import {About} from './components/about';
+import {Aboutus} from './components/aboutus';
 import {Expertise} from './components/expertise';
 import {Contact} from './components/contact';
 import {Earplugs} from './components/3MEarplugs';
@@ -32,7 +33,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home/>}/>
           <Route path="active-lawsuit/" element={<Earplugs/>}/>
-          <Route path="about-us/" element={<About/>}/>
+          <Route path="about-us/" element={<Aboutus/>}/>
           {/* <Route path="/zantac" element={<Zantac/>}/>
           <Route path="/nec" element={<Nec/>}/>
           <Route path="/camplejeune" element={<Camplejeune/>}/>

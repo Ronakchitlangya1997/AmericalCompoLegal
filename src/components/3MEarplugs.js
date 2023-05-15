@@ -9,12 +9,19 @@ export function Earplugs() {
     const [phone, setPhone] = useState("")
     const [message, setMessage] = useState("")
     const [submitted, setSubmitted] = useState(false);
+    const [formsubmitted, setFormSubmitted] = useState(true);
 
     const contactUsSubmit = (event) => {
         event.preventDefault();
         try {
             axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/contact-us/?fname=${encodeURIComponent(firstName)}&lname=${encodeURIComponent(LastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`)
             setSubmitted(true);
+            setFormSubmitted(false);
+            setTimeout(() => {
+                setFormSubmitted(true);
+                setSubmitted(false);
+            
+            }, 4000);
             document.getElementById('fname').value = "";
             document.getElementById('lname').value = "";
             document.getElementById('email').value = "";
@@ -90,8 +97,12 @@ export function Earplugs() {
 
                 <div className="Section4_2_details">
                     <p className="Section4_2_heding1">Make Your Voice Heard</p>
-                    {submitted && <p id="submit-success-id">Successfully Submitted!</p>}
-                    <form className="Auth-form" onSubmit={contactUsSubmit}>
+                    {submitted && <div>
+                <img className="formsubmit_success" src="https://americancompo.s3.ap-south-1.amazonaws.com/GreenTickFinal.gif"></img>
+                <p id="submit-success-id">Successfully Submitted!</p>
+                </div>
+                }
+                    {formsubmitted &&<form className="Auth-form" onSubmit={contactUsSubmit}>
                         <div className='Section4_2_inputbox d-flex'>
                             <input className="Section4_2_input" type="text" id="fname" name="fname" placeholder='First Name' onChange={(event) => setFirstName(event.target.value)}/>
                             <input className="Section4_2_input" type="text" id="lname" name="lname" placeholder='Last Name'onChange={(event) => setLastName(event.target.value)}/>
@@ -102,7 +113,7 @@ export function Earplugs() {
                         <button className="Section4_2_form_button" type="submit">
                             Submit
                         </button>
-                    </form>
+                    </form>}
                 </div>
             </div>
         </div>

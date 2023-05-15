@@ -18,10 +18,9 @@ export function Contact() {
             setSubmitted(true);
             setFormSubmitted(false);
             setTimeout(() => {
-                setSubmitted(false);
                 setFormSubmitted(true);
-                console.log('ghxddxgxdgdxg')
-
+                setSubmitted(false);
+            
             }, 4000);
             document.getElementById('fname').value = "";
             document.getElementById('lname').value = "";

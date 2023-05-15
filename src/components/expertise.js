@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const boxShadowCard = {
+  boxShadow:"0px 0px 4px #0000001A"
+}
 
 export function Expertise() {
     const [lawsuitsData, setLawsuitsData] = useState(null)
@@ -52,11 +55,11 @@ export function Expertise() {
                 <p className="Section3_1_heading1 Section3_1_heading1Reveal" id='ourExpertise'>Our expertise </p>
                 <p className="Section3_1_heading2 Section3_1_heading2Reveal " id='activeLawsuits'>Active Lawsuits</p>
             </div>
-            <div className="Section3_2">
+            <div className="Section3_2" >
                 {lawsuitsData &&
                 lawsuitsData.map((item, index) => (
                     <a href={`/active-lawsuit/?name=${item.name}`} className='Section3_2_cardReveal'>
-                        <div className="Section3_2_card">
+                        <div className="Section3_2_card"  style={boxShadowCard}>
                             <img src={item.imageLink} alt={item.imageLink} className='imageSize'></img>
                             <div className="Section3_2_info d-flex justify-content-sm-between">
                                 <p className="Section3_2_heading1">{item.name}</p>

@@ -37,6 +37,36 @@ export function Contact() {
         }
     }
 
+   let businessEmailBtn = document.getElementById('email');
+   let submitBtn = document.getElementById('submitBtnId');
+   let firstValidation = document.getElementById('fname');
+   let lastNameValidation = document.getElementById('lname');
+   let phoneValidation = document.getElementById('phone');
+   let messageContent = document.getElementById('messageContact');
+    function ValidateEmail() {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var val = businessEmailBtn.value;
+        if (val.match(validRegex) || val.length === 0) {
+           document.getElementById('emailMessage').style.display = "none";
+           businessEmailBtn.style.border ='1px solid #ced4da';
+           submitBtn.disabled = false;
+           validation();
+         } else {
+           document.getElementById('emailMessage').style.display = "block";	
+           businessEmailBtn.style.border = '2px solid red';
+           submitBtn.disabled = true;
+           validation();
+         }
+      }
+
+      function validation( ) {
+        if(firstValidation.value && lastNameValidation.value && phoneValidation.value && businessEmailBtn.value.length > 0 && businessEmailBtn.validity.valid && messageContent.value){
+            submitBtn.disabled = false;
+        }else{
+            submitBtn.disabled = true;
+        }
+      }
+
     return (
         <div className="Section4 d-flex">
             <div className="Section4_1">
@@ -63,13 +93,14 @@ export function Contact() {
                 }
                 {formsubmitted && <form className="Auth-form" onSubmit={contactUsSubmit}>
                     <div className='Section4_2_inputbox d-flex'>
-                        <input className="Section4_2_input" type="text" id="fname" name="fname" placeholder='First Name' onChange={(event) => setFirstName(event.target.value)}/>
-                        <input className="Section4_2_input" type="text" id="lname" name="lname" placeholder='Last Name'onChange={(event) => setLastName(event.target.value)}/>
-                        <input className="Section4_2_input" type="text" id="email" name="email" placeholder='Email' onChange={(event) => setEmail(event.target.value)}/>
-                        <input className="Section4_2_input" type="text" id="phone" name="phone" placeholder='Phone' onChange={(event) => setPhone(event.target.value)}/>
-                        <textarea className="Section4_2_input messbox" type="text" id="message" name="message" placeholder='Type Your Message Here' onChange={(event) => setMessage(event.target.value)}/>
+                        <input className="Section4_2_inputTop" type="text" id="fname" name="fname" placeholder='First Name' onChange={(event) => {setFirstName(event.target.value); validation()}}/>
+                        <input className="Section4_2_inputContact" type="text" id="lname" name="lname" placeholder='Last Name'onChange={(event) => {setLastName(event.target.value) ; validation()}}/>
+                        <input className="Section4_2_inputContact" type="email" id="email" name="email" placeholder='Email' onChange={(event) => {setEmail(event.target.value); ValidateEmail()}}/>
+                        <span id='emailMessage' className="emailError">Email id is not valid</span>
+                        <input className="Section4_2_inputContact" type="text" id="phone" name="phone" placeholder='Phone' onChange={(event) => {setPhone(event.target.value) ; validation()}}/>
+                        <textarea className="Section4_2_inputTextArea messbox" type="text" id="messageContact" name="message" placeholder='Type Your Message Here' onChange={(event) => {setMessage(event.target.value) ;validation()}}/>
                     </div>
-                    <button className="Section4_2_form_button" type="submit">
+                    <button className="Section4_2_form_button" id='submitBtnId' type="submit" disabled>
                         Submit
                     </button>
                 </form>}

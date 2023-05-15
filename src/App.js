@@ -32,7 +32,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home/>}/>
           <Route path="active-lawsuit/" element={<Earplugs/>}/>
-          <Route path="about-us/" element={<AboutUs/>}/>
+          <Route path="about-us/" element={<About/>}/>
           {/* <Route path="/zantac" element={<Zantac/>}/>
           <Route path="/nec" element={<Nec/>}/>
           <Route path="/camplejeune" element={<Camplejeune/>}/>

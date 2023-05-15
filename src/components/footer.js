@@ -29,19 +29,19 @@ export function Footer() {
                         {/* <a href="#"><img src="./Images/Dribbble.png" alt="" /></a> */}
                         {/* <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a> */}
-                        <a href="https://www.instagram.com/"
-                            className="instagram social footer_icon">
+                        <a href="https://www.instagram.com/americancompolegal/?fbclid=IwAR0GGoJzcwSm8iq2C6YXEx79kSjzBJIk5ItU_A0edBYmlG13jWCof0o8QOY"
+                            className="instagram social footer_icon" target="_blank">
                             <FontAwesomeIcon icon={faInstagram} size="1x" />
                         </a>
-                        <a href="https://www.facebook.com/"
-                            className="facebook social footer_icon">
+                        <a href="https://www.facebook.com/profile.php?id=100063840384052"
+                            className="facebook social footer_icon" target="_blank">
                             <FontAwesomeIcon icon={faFacebook} size="1x" />
                         </a>
-                        <a href="https://www.twitter.com/" className="twitter social footer_icon">
+                        <a href="https://www.facebook.com/profile.php?id=100063840384052" target="_blank" className="twitter social footer_icon">
                             <FontAwesomeIcon icon={faTwitter} size="1x" />
                         </a>
-                        <a href="https://www.youtube.com/"
-                            className="youtube social footer_icon">
+                        <a href="https://www.facebook.com/profile.php?id=100063840384052"
+                            className="youtube social footer_icon" target="_blank">
                             <FontAwesomeIcon icon={faYoutube} />
                         </a>
                     </div>
@@ -72,6 +72,20 @@ export function Footer() {
                         <div className = "vertical"></div>
                         <a href="#">Disclaimer</a>
                     </div> */}
+                </div>
+            </div>
+            <div className='Footer_copywrite_box d-flex'>
+                <div>
+                    <h6 className='Footer_copywrite d-flex'>© 2023 Copyright American Compo Legal</h6>
+                </div>
+                <div className='footer_Disclaimer_box d-flex '>
+                        <a className='footer_Disclaimer_heading' href="#">Terms & Conditions</a>
+                        <div className = "vertical"></div>
+                        <a className='footer_Disclaimer_heading' href="#">Privacy Policy</a>
+                        <div className = "vertical"></div>
+                        <a className='footer_Disclaimer_heading' href="#">Sitemap</a>
+                        <div className = "vertical"></div>
+                        <a className='footer_Disclaimer_heading' href="#">Disclaimer</a>
                 </div>
             </div>
         </div>

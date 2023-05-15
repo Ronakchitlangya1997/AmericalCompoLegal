@@ -11,7 +11,11 @@ export function Header() {
 
     const navbar = {
         background: "#FFFFFF",
-        padding: "0"
+        padding: "0",
+        position: 'fixed',
+        zIndex : '2',
+        width: '100%',
+        top: '0'
       };
 
     const navbar_subtitle={
@@ -79,6 +83,25 @@ export function Header() {
           window.addEventListener("resize",currentScreenWidth);
       });
 
+      const jumpToReleventDiv = (id) => {
+        if(document.getElementById('contactUsId')){
+          const releventDiv = document.getElementById('contactUsId');
+        // behavior: "smooth" parameter for smooth movement
+
+        releventDiv.scrollIntoView({behavior: "smooth"});
+        }else{
+
+          window.location.href = "/"
+          setTimeout(function() {
+            window.location.href = "/#contactUsId"
+          //   const releventDiv = document.getElementById('contactUsId');
+          // // behavior: "smooth" parameter for smooth movement
+
+          //   releventDiv.scrollIntoView({behavior: "smooth"});
+        }, 10);
+        }
+      }
+
     return (
         <Navbar style={navbar} expand="lg">
             <div className="navbar_title">
@@ -111,7 +134,7 @@ export function Header() {
                     ))}
                   </Dropdown.Menu>}
                 </Dropdown>  
-                <Nav.Link style={navbar_subtitle_fonts} href="#contactUsId">Feedback</Nav.Link>            
+                <Nav.Link style={navbar_subtitle_fonts} onClick={jumpToReleventDiv}>Feedback</Nav.Link>            
               </Nav>
             </Navbar.Collapse>
 

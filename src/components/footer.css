@@ -181,8 +181,8 @@
 }
 
 .vertical {
-    border-left: 2px solid white;
-    height: 20px;
+    border-left: 2px solid #D9DBE1;;
+    height: 16px;
   }
 
 .follow-us_links {
@@ -281,4 +281,40 @@
         position: static;
         
     }
+}
+
+.Footer_copywrite{
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+
+    color: #D9DBE1;
+
+}
+
+.Footer_copywrite_box{
+    gap: 38%;
+    margin-left: 110px;
+}
+
+.footer_Disclaimer_box{
+    gap: 8px;
+    line-height: 13px;
+}
+
+.footer_Disclaimer_heading{
+    text-decoration: none;
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 171% */
+
+    font-feature-settings: 'liga' off;
+
+    color: #D9DBE1;
 }

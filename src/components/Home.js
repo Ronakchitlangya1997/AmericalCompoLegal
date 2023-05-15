@@ -112,7 +112,12 @@ export function Home() {
                 <button className='Section1_form_button fontSizeForButton' onClick={(e) => {
                 e.preventDefault();
                 console.log(document.getElementById("cars").value)
+                if(document.getElementById("cars").value=="None")
+                {
+                  console.log("none")
+                }else{
                 window.location.href='/active-lawsuit/?name='+document.getElementById("cars").value;
+                }
                 }}>Get Tour free consultation</button>
                 <p className='Section1_form_heading3'>Privacy Policy | Terms Of Use</p>
             </div>

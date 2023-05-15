@@ -183,7 +183,9 @@
 #submit-success-id {
     margin-bottom: .5rem;
     margin-top: .5rem;
-    color: #FF5601;
+    color: #0f2b61;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .formsubmit_success{

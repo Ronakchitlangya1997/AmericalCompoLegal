@@ -53,7 +53,7 @@ export function Footer() {
                         <div className="quick-links_container-1">
                             <a className='Footer-subheading' href="/">Home</a>
                             <a className='Footer-subheading' href="/about-us">About Us</a>
-                            <a className='Footer-subheading' href="#">Feedback</a>
+                            <a className='Footer-subheading' href="#contactUsId">Feedback</a>
                         </div>
                     </div>
                 </div>
@@ -74,10 +74,10 @@ export function Footer() {
                     </div> */}
                 </div>
             </div>
-            <div className='Footer_copywrite_box d-flex'>
+            {/* <div className='Footer_copywrite_box d-flex'>
                 <div>
-                    <h6 className='Footer_copywrite d-flex'>© 2023 Copyright American Compo Legal</h6>
-                </div>
+                    {/* <h6 className='Footer_copywrite d-flex'>© 2023 Copyright American Compo Legal</h6> */}
+                {/* </div>
                 <div className='footer_Disclaimer_box d-flex '>
                         <a className='footer_Disclaimer_heading' href="#">Terms & Conditions</a>
                         <div className = "vertical"></div>
@@ -87,7 +87,7 @@ export function Footer() {
                         <div className = "vertical"></div>
                         <a className='footer_Disclaimer_heading' href="#">Disclaimer</a>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
 )

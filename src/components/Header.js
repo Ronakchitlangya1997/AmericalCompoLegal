@@ -12,10 +12,10 @@ export function Header() {
     const navbar = {
         background: "#FFFFFF",
         padding: "0",
-        position: 'fixed',
-        zIndex : '2',
-        width: '100%',
-        top: '0'
+        // position: 'fixed',
+        // zIndex : '2',
+        // width: '100%',
+        // top: '0'
       };
 
     const navbar_subtitle={

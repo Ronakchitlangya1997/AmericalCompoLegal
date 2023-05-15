@@ -281,6 +281,13 @@
         position: static;
         
     }
+    .Footer_copywrite_box{
+        flex-direction: column-reverse;
+        margin-left: 53px!important;
+    }
+    .footer_Disclaimer_box{
+        margin-bottom: 8px;
+    }
 }
 
 .Footer_copywrite{

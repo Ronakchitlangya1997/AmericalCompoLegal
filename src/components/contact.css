@@ -99,6 +99,10 @@
     right: 80px;
 }
 
+.Section4_2_details_about{
+    height: 625px;
+}
+
 .Section4_2_heding1{
     font-family: liberation-sans;
     font-style: normal;
@@ -183,7 +187,10 @@
 #submit-success-id {
     margin-bottom: .5rem;
     margin-top: .5rem;
-    color: #FF5601;
+    color: #0f2b61;
+    font-weight: 900;
+    font-size: 20px;
+    display: none;
 }
 
 .formsubmit_success{

@@ -17,6 +17,11 @@ export function Contact() {
             axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/contact-us/?fname=${encodeURIComponent(firstName)}&lname=${encodeURIComponent(LastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`)
             setSubmitted(true);
             setFormSubmitted(false);
+            setTimeout(() => {
+                setFormSubmitted(true);
+                setSubmitted(false);
+            
+            }, 4000);
             document.getElementById('fname').value = "";
             document.getElementById('lname').value = "";
             document.getElementById('email').value = "";
@@ -27,11 +32,6 @@ export function Contact() {
             setEmail("");
             setPhone("");
             setMessage("");
-            setTimeout(() => {
-                setSubmitted(false);
-                setFormSubmitted(true);
-
-            }, 1000);
         }catch {
 
         }
@@ -68,7 +68,7 @@ export function Contact() {
       }
 
     return (
-        <div className="Section4 d-flex">
+        <div className="Section4 d-flex" id="contactUsId">
             <div className="Section4_1">
                 <img src="https://americancompo.s3.ap-south-1.amazonaws.com/Stamp_Image.png"></img>
                 <p className="Section4_1_heading1">Request a Free Case Review</p>
@@ -84,10 +84,10 @@ export function Contact() {
                     firms has a successful track record of handling cases similar to yours.
                 </p>
             </div>
-            <div className="Section4_2" id="contactUsId">
+            <div className="Section4_2">
                 <p className="Section4_2_heding1">Make Your Voice Heard</p>
                 {submitted && <div>
-                <img className="formsubmit_success" src="https://thumbs.dreamstime.com/b/tick-icon-green-circle-vector-symbol-round-checkmark-isolated-white-checked-correct-choice-sign-background-check-mark-100120260.jpg"></img>
+                <img className="formsubmit_success" src="https://americancompo.s3.ap-south-1.amazonaws.com/GreenTickFinal.gif"></img>
                 <p id="submit-success-id">Successfully Submitted!</p>
                 </div>
                 }

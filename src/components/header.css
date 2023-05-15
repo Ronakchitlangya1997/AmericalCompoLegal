@@ -106,7 +106,7 @@ navbar_dropdown_innerelements {
   background-size: cover;
   height: 600px;
   justify-content: space-around;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 meda .dropbtn {
@@ -237,6 +237,7 @@ meda .dropbtn {
 .Section6_1 {
   width: 100%;
   position: relative;
+  /* margin-top: 100px; */
 }
 
 .Section6_heading {
@@ -453,6 +454,7 @@ meda .dropbtn {
   }
   .Section6_heading {
     margin-left: 10px;
+    top:75px;
   }
 }
 
@@ -509,7 +511,8 @@ meda .dropbtn {
   }
 
   .Section1_Heading2 {
-    font-size: 35px !important;
+    font-size: 42px !important;
+    line-height: 58px!important;
   }
 
   .Section1_Heading3 {
